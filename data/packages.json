@@ -1,0 +1,77 @@
+[
+  {
+    "id": "hajj-signature",
+    "type": "Hajj",
+    "title": "Signature Hajj Journey",
+    "duration": "20-25 Days",
+    "location": "Makkah, Madinah & Sacred Sites",
+    "price": "Custom consultation",
+    "description": "A guided Hajj journey centered on comfort, clarity of rituals, and spiritual mentoring throughout the pilgrimage.",
+    "features": [
+      "Pre-departure Hajj training sessions",
+      "Guided rites support on ground",
+      "Carefully selected accommodation",
+      "Community support before and after travel"
+    ]
+  },
+  {
+    "id": "umrah-guided",
+    "type": "Umrah",
+    "title": "Mufti-Led Umrah with Guidance",
+    "duration": "10-14 Days",
+    "location": "Makkah & Madinah",
+    "price": "Limited group slots",
+    "description": "Travel with Mufti Furqan Mamji for a spiritually focused Umrah enriched by education, preparation, and trusted companionship.",
+    "features": [
+      "Personal group leadership by Mufti Furqan Mamji",
+      "Ritual coaching and live Q&A",
+      "Training resources and checklists",
+      "Suitable for first-time and returning pilgrims"
+    ]
+  },
+  {
+    "id": "umrah-family",
+    "type": "Umrah",
+    "title": "Family Umrah Package",
+    "duration": "7-10 Days",
+    "location": "Makkah & Madinah",
+    "price": "Custom family quote",
+    "description": "A flexible Umrah package designed for families seeking convenience, guidance, and a calm travel experience.",
+    "features": [
+      "Family-friendly itinerary planning",
+      "Hotel options close to Haram",
+      "Assistance with documentation",
+      "Optional training sessions"
+    ]
+  },
+  {
+    "id": "pakistan-northern",
+    "type": "Pakistan Tour",
+    "title": "Northern Pakistan Discovery",
+    "duration": "5-8 Days",
+    "location": "Hunza, Skardu, Naran & Beyond",
+    "price": "Seasonal departures",
+    "description": "Scenic adventures across Pakistan's northern beauty with thoughtful planning, safety, and family-friendly coordination.",
+    "features": [
+      "Comfortable transport and stays",
+      "Curated family or group itineraries",
+      "Sightseeing support",
+      "Departure updates through WhatsApp"
+    ]
+  },
+  {
+    "id": "international-heritage",
+    "type": "International Tour",
+    "title": "International Heritage Tours",
+    "duration": "Custom itinerary",
+    "location": "Turkey, UAE, Central Asia and more",
+    "price": "By destination",
+    "description": "Thoughtfully organized tours that combine comfort, discovery, and meaningful experiences across global destinations.",
+    "features": [
+      "Flexible destination planning",
+      "Visa and travel support",
+      "Private or group departures",
+      "Trusted service and itinerary guidance"
+    ]
+  }
+]

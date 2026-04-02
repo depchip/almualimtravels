@@ -1,0 +1,44 @@
+[
+  {
+    "id": "training-1",
+    "title": "Masjid Hussain Hajj Training",
+    "url": "https://www.youtube.com/watch?v=eQVHbNA2YQY",
+    "category": "Preparation",
+    "description": "A practical Hajj training session by Mufti Furqan Mamji focused on readiness and confidence."
+  },
+  {
+    "id": "training-2",
+    "title": "How to Perform Hajj Step by Step",
+    "url": "https://www.youtube.com/watch?v=ypJqPCgNmJY",
+    "category": "Umrah Guide",
+    "description": "A step-by-step explanation of the rites in accessible Urdu for pilgrims and families."
+  },
+  {
+    "id": "training-3",
+    "title": "Spiritual Journey to Haramain Sharifain",
+    "url": "https://www.youtube.com/watch?v=43xeMdnZJgA",
+    "category": "Spiritual Tips",
+    "description": "Reflections on visiting the Haramain and preparing the heart for a sacred journey."
+  },
+  {
+    "id": "review-1",
+    "title": "Pilgrim Review One",
+    "url": "https://www.youtube.com/watch?v=el6kta_RmYM",
+    "category": "Testimonials",
+    "description": "A traveler shares their experience with Al Mualim Travels and Tours."
+  },
+  {
+    "id": "review-2",
+    "title": "Pilgrim Review Two",
+    "url": "https://www.youtube.com/watch?v=J4Ye2B_KFE0",
+    "category": "Testimonials",
+    "description": "Feedback from a pilgrim on the care, organization, and support they received."
+  },
+  {
+    "id": "review-3",
+    "title": "Pilgrim Review Three",
+    "url": "https://www.youtube.com/watch?v=ZDwWALTmROo",
+    "category": "Testimonials",
+    "description": "A testimonial highlighting the trust and authenticity of the group experience."
+  }
+]
