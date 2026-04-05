@@ -18,19 +18,10 @@ export function Footer() {
                 href={siteConfig.social.whatsapp}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-primary"
+                className="inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-primary sm:w-auto"
               >
                 <MessageCircle className="h-4 w-4" />
                 Chat on WhatsApp
-              </a>
-              <a
-                href={siteConfig.social.whatsappChannel}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-sm font-medium text-primary-foreground/85"
-              >
-                <MessageCircle className="h-4 w-4" />
-                Community Channel
               </a>
             </div>
             <div className="mt-6 flex flex-wrap gap-3">
