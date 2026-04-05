@@ -52,7 +52,7 @@ export function Footer() {
               <Link href="/umrah-with-guidance">Umrah with Guidance</Link>
               <Link href="/hajj-packages">Hajj Packages</Link>
               <Link href="/umrah-packages">Umrah Packages</Link>
-              <Link href="/pakistan-tours">Pakistan Tours</Link>
+              <Link href="/domestic-tours">Domestic Tours</Link>
               <Link href="/international-tours">International Tours</Link>
               <Link href="/training-resources">Training & Resources</Link>
             </div>
@@ -87,7 +87,7 @@ export function Footer() {
 
       <div className="border-t border-white/10">
         <div className="section-shell flex flex-col gap-4 py-5 text-sm text-primary-foreground/70 md:flex-row md:items-center md:justify-between">
-          <p className="max-w-2xl">Copyright © 2025 Al-Muallim Travel. All Rights Reserved By Al-Muallim</p>
+          <p className="max-w-2xl">Copyright © 2025 AlMuallim Travel. All Rights Reserved By AlMuallim</p>
           <a
             href="https://www.depchip.com"
             target="_blank"

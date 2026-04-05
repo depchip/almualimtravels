@@ -9,11 +9,11 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata = buildMetadata({
   title: "Training and Resources",
   description:
-    "Watch Umrah guidance, preparation sessions, and spiritual tips from Mufti Furqan Mamji in the Al Mualim Travels and Tours resource library.",
+    "Watch Umrah guidance, preparation sessions, and spiritual tips from Mufti Furqan Mamji in the AlMuallim Travels and Tours resource library.",
   path: "/training-resources",
 });
 
-const categories = ["Umrah Guide", "Preparation", "Spiritual Tips", "Testimonials"];
+const categories = ["Umrah Guide", "Preparation", "Spiritual Tips", "Client Reviews"];
 
 export default function TrainingResourcesPage() {
   return (

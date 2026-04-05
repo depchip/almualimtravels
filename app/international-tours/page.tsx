@@ -7,7 +7,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata = buildMetadata({
   title: "International Tours",
   description:
-    "Browse international tour options from Al Mualim Travels and Tours for families, groups, and custom departures.",
+    "Browse international tour options from AlMuallim Travels and Tours for families, groups, and custom departures.",
   path: "/international-tours",
 });
 

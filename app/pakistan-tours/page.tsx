@@ -8,7 +8,7 @@ import { siteConfig } from "@/lib/site";
 export const metadata = buildMetadata({
   title: "Pakistan Tours",
   description:
-    "Explore Pakistan tours with curated itineraries, seasonal departures, and trusted coordination from Al Mualim Travels and Tours.",
+    "Explore Pakistan tours with curated itineraries, seasonal departures, and trusted coordination from AlMuallim Travels and Tours.",
   path: "/pakistan-tours",
 });
 
@@ -18,18 +18,18 @@ export default function PakistanToursPage() {
   return (
     <>
       <PageHero
-        eyebrow="Pakistan Tours"
-        title="Curated journeys across the beauty of Pakistan"
+        eyebrow="Domestic Tours"
+        title="Curated domestic journeys across the beauty of Pakistan"
         description="Discover scenic escapes, family adventures, and group tours arranged with dependable planning and warm service."
       />
       <section className="section-shell section-space">
         <SectionHeading
           eyebrow="Featured Tours"
-          title="Explore our Pakistan experiences"
+          title="Explore our domestic tour packages"
           description="From northern landscapes to custom seasonal departures, our itineraries are designed around comfort, scenery, and responsible coordination."
         />
         <div className="mt-12">
-          <PackageGrid type="Pakistan Tour" />
+          <PackageGrid type="Domestic Tour" />
         </div>
       </section>
       <section className="section-shell section-space">

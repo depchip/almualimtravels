@@ -1,6 +1,8 @@
 import { HeroSection } from "@/components/hero-section";
 import {
+  ClientVideoReviewsSection,
   FeaturedPackages,
+  GoogleReviewsSection,
   GuidedUmrahHighlight,
   HomeTrainingSection,
   InquiryCTA,
@@ -18,6 +20,8 @@ export default function HomePage() {
       <FeaturedPackages />
       <GuidedUmrahHighlight />
       <HomeTrainingSection />
+      <GoogleReviewsSection />
+      <ClientVideoReviewsSection />
       <TestimonialsSection />
       <InquiryCTA />
     </>

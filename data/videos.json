@@ -22,23 +22,44 @@
   },
   {
     "id": "review-1",
-    "title": "Pilgrim Review One",
+    "title": "Client Video Review One",
     "url": "https://www.youtube.com/watch?v=el6kta_RmYM",
-    "category": "Testimonials",
-    "description": "A traveler shares their experience with Al Mualim Travels and Tours."
+    "category": "Client Reviews",
+    "description": "A traveler shares their experience with AlMuallim Travels."
   },
   {
     "id": "review-2",
-    "title": "Pilgrim Review Two",
+    "title": "Client Video Review Two",
     "url": "https://www.youtube.com/watch?v=J4Ye2B_KFE0",
-    "category": "Testimonials",
+    "category": "Client Reviews",
     "description": "Feedback from a pilgrim on the care, organization, and support they received."
   },
   {
     "id": "review-3",
-    "title": "Pilgrim Review Three",
+    "title": "Client Video Review Three",
     "url": "https://www.youtube.com/watch?v=ZDwWALTmROo",
-    "category": "Testimonials",
+    "category": "Client Reviews",
     "description": "A testimonial highlighting the trust and authenticity of the group experience."
+  },
+  {
+    "id": "review-4",
+    "title": "Client Video Review Four",
+    "url": "https://www.youtube.com/watch?v=6BTzKYtik7k",
+    "category": "Client Reviews",
+    "description": "A client shares reflections on their travel experience with AlMuallim Travels."
+  },
+  {
+    "id": "review-5",
+    "title": "Client Video Review Five",
+    "url": "https://www.youtube.com/watch?v=6ejipS-nlT4",
+    "category": "Client Reviews",
+    "description": "A traveler review focused on service, support, and overall satisfaction."
+  },
+  {
+    "id": "review-6",
+    "title": "Client Video Review Six",
+    "url": "https://www.youtube.com/watch?v=VlvJWI2owRw",
+    "category": "Client Reviews",
+    "description": "A video review from a client highlighting trust and the guided travel experience."
   }
 ]

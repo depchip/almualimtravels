@@ -1,17 +1,18 @@
 import Link from "next/link";
 import { ArrowRight, BadgeCheck, BookOpenCheck, Landmark, MapPinned, ShieldCheck, TentTree, Users } from "lucide-react";
 
-import packages from "@/data/packages.json";
 import testimonials from "@/data/testimonials.json";
 import videos from "@/data/videos.json";
 
 import { AnimatedSection } from "@/components/animated-section";
+import { GoogleReviewCard } from "@/components/google-review-card";
 import { InquiryForm } from "@/components/inquiry-form";
 import { PackageCard } from "@/components/package-card";
 import { TestimonialCard } from "@/components/testimonial-card";
 import { Button } from "@/components/ui/button";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { VideoCard } from "@/components/video-card";
+import { allPackages } from "@/lib/packages";
 import { siteConfig } from "@/lib/site";
 
 const serviceCards = [
@@ -80,7 +81,7 @@ export function TrustBand() {
 }
 
 export function FeaturedPackages() {
-  const featured = packages.slice(0, 3);
+  const featured = allPackages.slice(0, 3);
 
   return (
     <section className="section-shell section-space">
@@ -146,7 +147,7 @@ export function GuidedUmrahHighlight() {
 }
 
 export function HomeTrainingSection() {
-  const trainingVideos = videos.filter((video) => video.category !== "Testimonials").slice(0, 3);
+  const trainingVideos = videos.filter((video) => video.category !== "Client Reviews").slice(0, 3);
 
   return (
     <section className="section-shell section-space">
@@ -183,6 +184,62 @@ export function TestimonialsSection() {
           <AnimatedSection key={testimonial.name} delay={index * 0.08}>
             <TestimonialCard testimonial={testimonial} />
           </AnimatedSection>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+export function GoogleReviewsSection() {
+  return (
+    <section className="section-shell section-space">
+      <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+        <SectionHeading
+          eyebrow="Google Reviews"
+          title="Trusted by pilgrims and travelers"
+          description="AlMuallim Travels is backed by strong public reviews from clients who traveled for Umrah, Hajj, and domestic tours."
+        />
+        <div className="rounded-[2rem] border border-primary/10 bg-white/80 px-6 py-5 shadow-sm">
+          <p className="font-display text-5xl font-semibold text-foreground">{siteConfig.googleRating.score}</p>
+          <div className="mt-2 flex gap-1">
+            {Array.from({ length: 5 }).map((_, index) => (
+              <BadgeCheck key={index} className="h-4 w-4 text-accent" />
+            ))}
+          </div>
+          <p className="mt-3 text-sm text-muted-foreground">
+            {siteConfig.googleRating.totalReviews} {siteConfig.googleRating.label}
+          </p>
+        </div>
+      </div>
+      <div className="mt-12 grid gap-6 lg:grid-cols-3">
+        {testimonials.slice(0, 3).map((review, index) => (
+          <AnimatedSection key={review.name} delay={index * 0.08}>
+            <GoogleReviewCard review={review} />
+          </AnimatedSection>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+export function ClientVideoReviewsSection() {
+  const reviewVideos = videos.filter((video) => video.category === "Client Reviews");
+
+  return (
+    <section className="section-shell section-space">
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+        <SectionHeading
+          eyebrow="Client Video Reviews"
+          title="Hear directly from AlMuallim travelers"
+          description="Watch genuine feedback from clients who traveled with AlMuallim Travels and shared their experience on YouTube."
+        />
+        <Link href="/training-resources" className="text-sm font-semibold text-primary">
+          View all review videos <ArrowRight className="ml-1 inline h-4 w-4" />
+        </Link>
+      </div>
+      <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        {reviewVideos.slice(0, 6).map((video) => (
+          <VideoCard key={video.id} video={video} />
         ))}
       </div>
     </section>

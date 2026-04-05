@@ -1,4 +1,4 @@
-# Al Mualim Travels and Tours
+# AlMuallim Travels and Tours
 
 Production-ready static website built with Next.js App Router, TypeScript, Tailwind CSS, reusable UI components, Framer Motion, and a mock inquiry API route.
 

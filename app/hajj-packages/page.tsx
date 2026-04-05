@@ -1,14 +1,16 @@
 import { FAQSection } from "@/components/faq-section";
 import { PackageGrid } from "@/components/page-grid";
+import { SacredGallery } from "@/components/sacred-gallery";
 import { InquiryCTA } from "@/components/site-sections";
 import { PageHero } from "@/components/ui/page-hero";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { buildMetadata } from "@/lib/seo";
+import { siteConfig } from "@/lib/site";
 
 export const metadata = buildMetadata({
   title: "Hajj Packages",
   description:
-    "Explore Hajj packages with guidance, pre-travel preparation, and trusted service from Al Mualim Travels and Tours.",
+    "Explore Hajj packages with guidance, pre-travel preparation, and trusted service from AlMuallim Travels and Tours.",
   path: "/hajj-packages",
 });
 
@@ -30,6 +32,12 @@ export default function HajjPackagesPage() {
           <PackageGrid type="Hajj" />
         </div>
       </section>
+      <SacredGallery
+        eyebrow="Sacred Journey"
+        title="Visuals from the Haramain"
+        description="A visual reflection of the sacred places that inspire preparation, reverence, and anticipation before Hajj and Umrah."
+        images={[siteConfig.assets.media.makkahImages[0], siteConfig.assets.media.makkahImages[3], siteConfig.assets.media.madinahImages[0], siteConfig.assets.media.madinahImages[3]]}
+      />
       <section className="section-shell section-space">
         <SectionHeading eyebrow="FAQs" title="Planning for Hajj" description="Helpful information for travelers preparing early." />
         <div className="mt-10">

@@ -22,7 +22,7 @@ export function HeroSection() {
             Sacred journeys prepared with knowledge, sincerity, and care.
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-7 text-muted-foreground sm:text-lg sm:leading-8">
-            Al Mualim Travels and Tours brings together travel planning, practical training, and spiritual support so pilgrims
+            AlMuallim Travels and Tours brings together travel planning, practical training, and spiritual support so pilgrims
             can travel with confidence under the guidance of Mufti Furqan Mamji.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -52,7 +52,7 @@ export function HeroSection() {
           <div className="mesh-panel gold-ring rounded-[2rem] p-4 sm:p-6">
             <div className="rounded-[1.5rem] bg-primary p-6 text-primary-foreground sm:p-8">
               <div className="flex items-center gap-4">
-                <Image src={siteConfig.assets.branding.markLogo} alt="Al Mualim Travels mark" width={72} height={72} className="h-14 w-14 rounded-2xl bg-white/10 p-2 sm:h-[72px] sm:w-[72px]" />
+                <Image src={siteConfig.assets.branding.markLogo} alt="AlMuallim Travels mark" width={72} height={72} className="h-14 w-14 rounded-2xl bg-white/10 p-2 sm:h-[72px] sm:w-[72px]" />
                 <div>
                   <p className="text-sm uppercase tracking-[0.3em] text-primary-foreground/70">Led by</p>
                   <h2 className="font-display text-2xl font-semibold">Mufti Furqan Mamji</h2>

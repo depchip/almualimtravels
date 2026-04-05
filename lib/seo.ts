@@ -10,7 +10,7 @@ type MetaInput = {
 };
 
 export function buildMetadata({ title, description, path = "/" }: MetaInput): Metadata {
-  const fullTitle = `${title} | Al Mualim Travels and Tours`;
+  const fullTitle = `${title} | AlMuallim Travels and Tours`;
   const url = `${baseUrl}${path}`;
 
   return {
@@ -23,7 +23,7 @@ export function buildMetadata({ title, description, path = "/" }: MetaInput): Me
       title: fullTitle,
       description,
       url,
-      siteName: "Al Mualim Travels and Tours",
+      siteName: "AlMuallim Travels and Tours",
       locale: "en_US",
       type: "website",
       images: [
@@ -31,7 +31,7 @@ export function buildMetadata({ title, description, path = "/" }: MetaInput): Me
           url: `${baseUrl}${siteConfig.assets.branding.orgLogo}`,
           width: 1200,
           height: 630,
-          alt: "Al Mualim Travels and Tours",
+          alt: "AlMuallim Travels and Tours",
         },
       ],
     },
@@ -50,7 +50,7 @@ export function buildMetadata({ title, description, path = "/" }: MetaInput): Me
 export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "TravelAgency",
-  name: "Al Mualim Travels and Tours",
+  name: "AlMuallim Travels and Tours",
   url: baseUrl,
   logo: `${baseUrl}${siteConfig.assets.branding.orgLogo}`,
   sameAs: [
@@ -73,7 +73,7 @@ export const personSchema = {
   jobTitle: "Islamic Scholar and Group Guide",
   worksFor: {
     "@type": "TravelAgency",
-    name: "Al Mualim Travels and Tours",
+    name: "AlMuallim Travels and Tours",
   },
   sameAs: [siteConfig.social.youtube],
   description:

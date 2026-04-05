@@ -2,6 +2,7 @@ import videos from "@/data/videos.json";
 
 import { FAQSection } from "@/components/faq-section";
 import { InquiryCTA } from "@/components/site-sections";
+import { SacredGallery } from "@/components/sacred-gallery";
 import { PageHero } from "@/components/ui/page-hero";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { VideoShowcase } from "@/components/video-showcase";
@@ -34,7 +35,7 @@ const faqItems = [
 ];
 
 export default function UmrahWithGuidancePage() {
-  const featuredVideos = videos.filter((video) => video.category !== "Testimonials").slice(0, 3);
+  const featuredVideos = videos.filter((video) => video.category !== "Client Reviews").slice(0, 3);
 
   return (
     <>
@@ -80,6 +81,13 @@ export default function UmrahWithGuidancePage() {
           ))}
         </div>
       </section>
+
+      <SacredGallery
+        eyebrow="Sacred Places"
+        title="Moments from Makkah and Madinah"
+        description="A glimpse of the sacred surroundings that make the Umrah journey deeply memorable and spiritually uplifting."
+        images={[...siteConfig.assets.media.makkahImages.slice(0, 2), ...siteConfig.assets.media.madinahImages.slice(0, 2)]}
+      />
 
       <VideoShowcase
         eyebrow="Training Sessions Included"

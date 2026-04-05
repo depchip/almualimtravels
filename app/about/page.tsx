@@ -5,7 +5,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata = buildMetadata({
   title: "About Us",
   description:
-    "Learn about Al Mualim Travels and Tours, its mission, and the scholar-led guidance of Mufti Furqan Mamji.",
+    "Learn about AlMuallim Travels and Tours, its mission, and the scholar-led guidance of Mufti Furqan Mamji.",
   path: "/about",
 });
 
@@ -15,7 +15,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About Us"
         title="A travel company built around sincerity, preparation, and service"
-        description="Al Mualim Travels and Tours is committed to offering travel experiences that are organized, trustworthy, and spiritually meaningful."
+        description="AlMuallim Travels and Tours is committed to offering travel experiences that are organized, trustworthy, and spiritually meaningful."
       />
       <section className="section-shell section-space grid gap-8 lg:grid-cols-2">
         <div className="mesh-panel gold-ring rounded-[2rem] p-8">

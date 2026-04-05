@@ -23,7 +23,7 @@ const bodyFont = Manrope({
 export const metadata: Metadata = buildMetadata({
   title: "Trusted Hajj, Umrah and Tours",
   description:
-    "Al Mualim Travels and Tours offers trusted Hajj, Umrah, Pakistan tours, and training with guidance from Mufti Furqan Mamji.",
+    "AlMuallim Travels and Tours offers trusted Hajj, Umrah, Pakistan tours, and training with guidance from Mufti Furqan Mamji.",
 });
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

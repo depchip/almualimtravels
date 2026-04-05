@@ -1,77 +1,245 @@
 [
   {
-    "id": "hajj-signature",
+    "id": "hajj-premium-18-nights",
     "type": "Hajj",
-    "title": "Signature Hajj Journey",
-    "duration": "20-25 Days",
-    "location": "Makkah, Madinah & Sacred Sites",
-    "price": "Custom consultation",
-    "description": "A guided Hajj journey centered on comfort, clarity of rituals, and spiritual mentoring throughout the pilgrimage.",
-    "features": [
+    "title": "Premium Hajj Package",
+    "subtitle": "Comfort-focused Hajj journey with scholar-led preparation",
+    "duration": "18 Nights",
+    "location": "Makkah, Madinah & Mina",
+    "price": "Rs. 1,850,000 / Person",
+    "heroLabel": "Hajj Package",
+    "route": "/hajj-packages",
+    "theme": "Hajj",
+    "summary": "A guided Hajj experience with comfortable stays, practical training, and careful support from departure to return.",
+    "description": "This package is designed for pilgrims who want a structured Hajj journey with dependable planning, pre-travel orientation, and a spiritually focused group environment.",
+    "highlights": [
       "Pre-departure Hajj training sessions",
-      "Guided rites support on ground",
-      "Carefully selected accommodation",
-      "Community support before and after travel"
-    ]
+      "Comfortable hotels in Makkah and Madinah",
+      "Ground coordination during key rites",
+      "Support for first-time and returning pilgrims"
+    ],
+    "inclusions": [
+      "10 Nights Makkah",
+      "08 Nights Madinah",
+      "4 or 5 star accommodation",
+      "Air travel and visa assistance"
+    ],
+    "bookingCategories": ["Economic", "Standard", "Premium"]
   },
   {
-    "id": "umrah-guided",
+    "id": "hajj-signature-21-nights",
+    "type": "Hajj",
+    "title": "Signature Hajj Package",
+    "subtitle": "Extended Hajj itinerary for travelers wanting extra comfort",
+    "duration": "21 Nights",
+    "location": "Makkah, Madinah & Sacred Sites",
+    "price": "Rs. 2,250,000 / Person",
+    "heroLabel": "Hajj Package",
+    "route": "/hajj-packages",
+    "theme": "Hajj",
+    "summary": "A longer Hajj package with premium support, additional preparation, and carefully selected hotels close to key locations.",
+    "description": "This journey is arranged for pilgrims who want an elevated Hajj experience with more time in the Haramain and a calm, well-supported itinerary.",
+    "highlights": [
+      "Scholar-led guidance and group support",
+      "Well-paced itinerary and logistics support",
+      "Priority focus on comfort and clarity",
+      "Ideal for families and senior travelers"
+    ],
+    "inclusions": [
+      "12 Nights Makkah",
+      "09 Nights Madinah",
+      "5 star accommodation",
+      "Air travel and transport support"
+    ],
+    "bookingCategories": ["Standard", "Premium"]
+  },
+  {
+    "id": "umrah-executive-14-nights",
     "type": "Umrah",
-    "title": "Mufti-Led Umrah with Guidance",
-    "duration": "10-14 Days",
+    "title": "Executive Umrah Package",
+    "subtitle": "A complete Umrah package with comfort and preparation",
+    "duration": "14 Nights",
     "location": "Makkah & Madinah",
-    "price": "Limited group slots",
-    "description": "Travel with Mufti Furqan Mamji for a spiritually focused Umrah enriched by education, preparation, and trusted companionship.",
-    "features": [
-      "Personal group leadership by Mufti Furqan Mamji",
-      "Ritual coaching and live Q&A",
-      "Training resources and checklists",
-      "Suitable for first-time and returning pilgrims"
-    ]
+    "price": "Rs. 400,000 / Person",
+    "heroLabel": "Umrah Package",
+    "route": "/umrah-packages",
+    "theme": "Umrah",
+    "summary": "A premium Umrah package with balanced time in both Haramain, suitable for pilgrims seeking a spiritually focused and comfortable journey.",
+    "description": "This package combines practical support, hotel comfort, and pre-travel guidance so pilgrims can approach Umrah with confidence and calm.",
+    "highlights": [
+      "08 Nights Makkah",
+      "06 Nights Madinah",
+      "5 star accommodation",
+      "Saudi Airlines or similar carrier"
+    ],
+    "inclusions": [
+      "Daily support and guidance",
+      "Visa assistance",
+      "Airport transfers",
+      "Preparation resources before departure"
+    ],
+    "bookingCategories": ["Economic", "Standard", "Premium"]
   },
   {
-    "id": "umrah-family",
+    "id": "umrah-executive-12-nights",
     "type": "Umrah",
-    "title": "Family Umrah Package",
-    "duration": "7-10 Days",
+    "title": "Executive Umrah Package",
+    "subtitle": "Balanced Umrah stay with strong value and comfort",
+    "duration": "12 Nights",
     "location": "Makkah & Madinah",
-    "price": "Custom family quote",
-    "description": "A flexible Umrah package designed for families seeking convenience, guidance, and a calm travel experience.",
-    "features": [
-      "Family-friendly itinerary planning",
-      "Hotel options close to Haram",
-      "Assistance with documentation",
-      "Optional training sessions"
-    ]
+    "price": "Rs. 300,000 / Person",
+    "heroLabel": "Umrah Package",
+    "route": "/umrah-packages",
+    "theme": "Umrah",
+    "summary": "A strong-value Umrah package that offers meaningful time in Makkah and Madinah with comfortable accommodation and travel support.",
+    "description": "This package is ideal for families and individuals looking for a moderate-duration Umrah with dependable planning and easy support.",
+    "highlights": [
+      "06 Nights Makkah",
+      "05 Nights Madinah",
+      "5 star accommodation",
+      "Saudi Airlines or similar carrier"
+    ],
+    "inclusions": [
+      "Visa processing support",
+      "Accommodation and transfers",
+      "Travel planning assistance",
+      "Suitable for families and small groups"
+    ],
+    "bookingCategories": ["Economic", "Standard", "Premium"]
   },
   {
-    "id": "pakistan-northern",
-    "type": "Pakistan Tour",
-    "title": "Northern Pakistan Discovery",
-    "duration": "5-8 Days",
-    "location": "Hunza, Skardu, Naran & Beyond",
-    "price": "Seasonal departures",
-    "description": "Scenic adventures across Pakistan's northern beauty with thoughtful planning, safety, and family-friendly coordination.",
-    "features": [
-      "Comfortable transport and stays",
-      "Curated family or group itineraries",
+    "id": "umrah-executive-7-nights",
+    "type": "Umrah",
+    "title": "Executive Umrah Package",
+    "subtitle": "Short Umrah package for quick and focused travel",
+    "duration": "7 Nights",
+    "location": "Makkah & Madinah",
+    "price": "Rs. 200,000 / Person",
+    "heroLabel": "Umrah Package",
+    "route": "/umrah-packages",
+    "theme": "Umrah",
+    "summary": "A short Umrah option designed for travelers seeking a more compact itinerary without compromising on support and planning.",
+    "description": "This package is suitable for professionals, families with limited time, or pilgrims looking for a shorter and more affordable Umrah journey.",
+    "highlights": [
+      "03 Nights Makkah",
+      "03 Nights Madinah",
+      "5 star accommodation",
+      "Saudi Airlines or similar carrier"
+    ],
+    "inclusions": [
+      "Travel assistance and support",
+      "Visa coordination",
+      "Airport and hotel transfers",
+      "Compact and efficient itinerary"
+    ],
+    "bookingCategories": ["Economic", "Standard"]
+  },
+  {
+    "id": "domestic-hunza-family",
+    "type": "Domestic Tour",
+    "title": "Hunza Family Escape",
+    "subtitle": "Scenic domestic tour across northern Pakistan",
+    "duration": "5 Nights",
+    "location": "Hunza, Attabad & Karimabad",
+    "price": "From Rs. 85,000 / Person",
+    "heroLabel": "Domestic Tour",
+    "route": "/domestic-tours",
+    "theme": "Domestic",
+    "summary": "A beautiful domestic package covering iconic northern landscapes, family-friendly stays, and guided travel support.",
+    "description": "This domestic tour is curated for families and groups who want a smooth northern Pakistan experience with comfortable planning and memorable sightseeing.",
+    "highlights": [
+      "Hunza and Attabad Lake visits",
+      "Family-friendly itinerary",
+      "Hotel stays and transport included",
+      "Ideal for seasonal group departures"
+    ],
+    "inclusions": [
+      "Transport throughout the tour",
+      "Comfortable hotel stays",
       "Sightseeing support",
-      "Departure updates through WhatsApp"
-    ]
+      "Trip coordination"
+    ],
+    "bookingCategories": ["Economic", "Standard", "Premium"]
   },
   {
-    "id": "international-heritage",
+    "id": "domestic-skardu-adventure",
+    "type": "Domestic Tour",
+    "title": "Skardu Adventure Package",
+    "subtitle": "Domestic mountain travel with curated sightseeing",
+    "duration": "7 Nights",
+    "location": "Skardu, Shangrila & Upper Kachura",
+    "price": "From Rs. 125,000 / Person",
+    "heroLabel": "Domestic Tour",
+    "route": "/domestic-tours",
+    "theme": "Domestic",
+    "summary": "A scenic domestic tour designed for travelers who want Skardu landscapes, organized transport, and dependable stays.",
+    "description": "This package blends comfort and exploration for travelers wanting a thoughtfully organized domestic tour across Skardu's most loved destinations.",
+    "highlights": [
+      "Skardu and Shangrila visits",
+      "Well-paced domestic itinerary",
+      "Transport and hotel support",
+      "Custom group arrangements available"
+    ],
+    "inclusions": [
+      "Ground transport",
+      "Hotel accommodation",
+      "Basic sightseeing coverage",
+      "Trip planning support"
+    ],
+    "bookingCategories": ["Standard", "Premium"]
+  },
+  {
+    "id": "international-turkey-classic",
     "type": "International Tour",
-    "title": "International Heritage Tours",
-    "duration": "Custom itinerary",
-    "location": "Turkey, UAE, Central Asia and more",
-    "price": "By destination",
-    "description": "Thoughtfully organized tours that combine comfort, discovery, and meaningful experiences across global destinations.",
-    "features": [
-      "Flexible destination planning",
-      "Visa and travel support",
-      "Private or group departures",
-      "Trusted service and itinerary guidance"
-    ]
+    "title": "Turkey Classic Tour",
+    "subtitle": "A curated international tour with history and comfort",
+    "duration": "7 Nights",
+    "location": "Istanbul, Bursa & Sapanca",
+    "price": "From Rs. 450,000 / Person",
+    "heroLabel": "International Tour",
+    "route": "/international-tours",
+    "theme": "International",
+    "summary": "An international package built for travelers who want a polished itinerary, sightseeing, and comfortable travel planning.",
+    "description": "This tour combines major city highlights, guided travel coordination, and flexible pacing for families and groups traveling internationally.",
+    "highlights": [
+      "Istanbul city highlights",
+      "Comfortable hotels and transfers",
+      "Visa guidance and planning support",
+      "Suitable for families and groups"
+    ],
+    "inclusions": [
+      "Hotel accommodation",
+      "Airport transfers",
+      "Sightseeing support",
+      "Travel assistance"
+    ],
+    "bookingCategories": ["Economic", "Standard", "Premium"]
+  },
+  {
+    "id": "international-dubai-delight",
+    "type": "International Tour",
+    "title": "Dubai Delight Tour",
+    "subtitle": "A short international city escape with premium support",
+    "duration": "5 Nights",
+    "location": "Dubai & Abu Dhabi",
+    "price": "From Rs. 325,000 / Person",
+    "heroLabel": "International Tour",
+    "route": "/international-tours",
+    "theme": "International",
+    "summary": "An international city break with curated attractions, dependable travel support, and comfort for couples, families, and groups.",
+    "description": "This package offers a clean and flexible Dubai itinerary with accommodation, support, and optional add-ons based on traveler preference.",
+    "highlights": [
+      "Dubai and Abu Dhabi experiences",
+      "Hotel and transfer coordination",
+      "Visa and travel assistance",
+      "Customizable for private groups"
+    ],
+    "inclusions": [
+      "Accommodation support",
+      "Airport transfers",
+      "City tour coordination",
+      "Pre-travel guidance"
+    ],
+    "bookingCategories": ["Standard", "Premium"]
   }
 ]

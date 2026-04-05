@@ -1,20 +1,32 @@
 [
   {
-    "name": "Amina S.",
-    "service": "Umrah Pilgrim",
-    "quote": "The journey felt spiritually grounding from the first session to the final tawaf. We were never left confused or unsupported.",
+    "name": "Ayaz Awan",
+    "service": "Google Review",
+    "quote": "Alhamdulillah I performed Umrah with AlMuallim Travels and had a great experience. Everything was very well organized from airport pickup and drop-off to ziarat tours and airline guidance. The whole journey was smooth and stress free. Highly recommended.",
     "rating": 5
   },
   {
-    "name": "Irfan M.",
-    "service": "Hajj Group Member",
-    "quote": "Mufti Furqan's guidance made a complex journey feel clear and focused. The preparation sessions were as valuable as the travel itself.",
+    "name": "Syed Tauqeer Hasan",
+    "service": "Google Review",
+    "quote": "I, along with my family, had my Umrah planned and managed by AlMuallim Travels. Everything was very well organized from the visa process to hotel bookings, transportation and ziarat. The location of the hotels, travel vehicles, and coordination were top-notch.",
     "rating": 5
   },
   {
-    "name": "Sameena K.",
-    "service": "Family Umrah Traveler",
-    "quote": "What stood out most was the honesty, planning, and personal care. It felt like traveling with people who truly understood our intentions.",
+    "name": "Naveed Ahmed",
+    "service": "Google Review",
+    "quote": "Went for Umrah with al-mualim for the first time. Other than smooth booking, private transportation and visa support, what really inspired me was the personalized approach. They stay with you on every step of the journey and provide dependable guidance.",
+    "rating": 5
+  },
+  {
+    "name": "Jamal Iqbal",
+    "service": "Google Review",
+    "quote": "Alhamdulilah, we visited Madina and Makkah for Umrah with Hazrat Mufti Furqan Mamji Sahib. We found him very supportive and his sense of knowledge is quite impressive. He taught us many important things regarding Umrah and ziarats.",
+    "rating": 5
+  },
+  {
+    "name": "Muhammad Tanveer Khan",
+    "service": "Google Review",
+    "quote": "I recently traveled to Pakistan through AlMuallim Travels, and I am very satisfied with their services. All the arrangements were well-organized and handled professionally. Their team was supportive, responsive, and made sure the entire trip was comfortable and stress-free.",
     "rating": 5
   }
 ]

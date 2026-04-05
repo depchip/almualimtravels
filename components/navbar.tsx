@@ -11,9 +11,9 @@ import { siteConfig } from "@/lib/site";
 const links = [
   { href: "/", label: "Home" },
   { href: "/umrah-with-guidance", label: "Umrah with Guidance" },
-  { href: "/hajj-packages", label: "Hajj" },
-  { href: "/umrah-packages", label: "Umrah" },
-  { href: "/pakistan-tours", label: "Pakistan Tours" },
+  { href: "/hajj-packages", label: "Hajj Packages" },
+  { href: "/umrah-packages", label: "Umrah Packages" },
+  { href: "/domestic-tours", label: "Domestic Tours" },
   { href: "/international-tours", label: "International Tours" },
   { href: "/training-resources", label: "Training" },
   { href: "/about", label: "About" },

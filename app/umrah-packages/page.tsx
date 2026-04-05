@@ -1,14 +1,16 @@
 import { FAQSection } from "@/components/faq-section";
 import { PackageGrid } from "@/components/page-grid";
+import { SacredGallery } from "@/components/sacred-gallery";
 import { InquiryCTA } from "@/components/site-sections";
 import { PageHero } from "@/components/ui/page-hero";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { buildMetadata } from "@/lib/seo";
+import { siteConfig } from "@/lib/site";
 
 export const metadata = buildMetadata({
   title: "Umrah Packages",
   description:
-    "Discover Umrah packages for individuals, families, and guided groups with trusted support from Al Mualim Travels and Tours.",
+    "Discover Umrah packages for individuals, families, and guided groups with trusted support from AlMuallim Travels and Tours.",
   path: "/umrah-packages",
 });
 
@@ -30,6 +32,12 @@ export default function UmrahPackagesPage() {
           <PackageGrid type="Umrah" />
         </div>
       </section>
+      <SacredGallery
+        eyebrow="Journey Atmosphere"
+        title="The beauty of Makkah and Madinah"
+        description="These sacred views help visitors feel the atmosphere of the Haramain and the kind of journey AlMuallim travelers prepare for."
+        images={[...siteConfig.assets.media.makkahImages, ...siteConfig.assets.media.madinahImages].slice(0, 4)}
+      />
       <section className="section-shell section-space">
         <SectionHeading eyebrow="FAQs" title="Before you book" description="A few common points about our Umrah services." />
         <div className="mt-10">

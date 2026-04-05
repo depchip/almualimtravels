@@ -1,10 +1,15 @@
 export const siteConfig = {
-  name: "Al Mualim Travels and Tours",
-  shortName: "Al Mualim Travels",
-  url: "https://almualimtravels.com",
+  name: "AlMuallim Travels and Tours",
+  shortName: "AlMuallim Travels",
+  url: "https://almuallimtravels.com",
   email: "almuallimtravels@gmail.com",
   phoneNumbers: ["+92 321-3110100", "+92 311-2774836", "+92 342-8011000"],
   address: "48-B, RJ Mall, Main Rashid Minhas Road, Karachi, Pakistan",
+  googleRating: {
+    score: 4.9,
+    totalReviews: 297,
+    label: "Google Reviews",
+  },
   social: {
     facebook: "https://www.facebook.com/Almuallimtravels/",
     youtube: "https://youtube.com/@Almuallimtravels",
@@ -32,6 +37,18 @@ export const siteConfig = {
         "/assets/media/videos/pakistan/about-2.mp4",
         "/assets/media/videos/pakistan/about-3.mp4",
       ],
+      makkahImages: [
+        "/assets/media/images/makkah/makkah-1.jpg",
+        "/assets/media/images/makkah/makkah-2.jpg",
+        "/assets/media/images/makkah/makkah-3.jpg",
+        "/assets/media/images/makkah/makkah-4.jpg"
+      ],
+      madinahImages: [
+        "/assets/media/images/madinah/madinah-1.jpeg",
+        "/assets/media/images/madinah/madinah-2.jpg",
+        "/assets/media/images/madinah/madinah-3.webp",
+        "/assets/media/images/madinah/madinah-4.jpg"
+      ]
     },
   },
 } as const;

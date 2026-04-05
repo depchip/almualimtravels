@@ -9,7 +9,7 @@ import { siteConfig } from "@/lib/site";
 export const metadata = buildMetadata({
   title: "Contact Us",
   description:
-    "Contact Al Mualim Travels and Tours for Hajj, Umrah, tours, training, and general travel inquiries.",
+    "Contact AlMuallim Travels and Tours for Hajj, Umrah, tours, training, and general travel inquiries.",
   path: "/contact",
 });
 
@@ -100,7 +100,7 @@ export default function ContactPage() {
               <p className="text-sm font-medium">Google Maps</p>
             </div>
             <iframe
-              title="Al Mualim Travels and Tours location"
+              title="AlMuallim Travels and Tours location"
               src={siteConfig.maps.embed}
               loading="lazy"
               className="h-[320px] w-full"
