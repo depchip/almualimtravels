@@ -1,4 +1,5 @@
 import { FAQSection } from "@/components/faq-section";
+import { HajjTrainingPosters } from "@/components/hajj-training-posters";
 import { PackageGrid } from "@/components/page-grid";
 import { SacredGallery } from "@/components/sacred-gallery";
 import { InquiryCTA } from "@/components/site-sections";
@@ -37,6 +38,10 @@ export default function HajjPackagesPage() {
         title="Visuals from the Haramain"
         description="A visual reflection of the sacred places that inspire preparation, reverence, and anticipation before Hajj and Umrah."
         images={[siteConfig.assets.media.makkahImages[0], siteConfig.assets.media.makkahImages[3], siteConfig.assets.media.madinahImages[0], siteConfig.assets.media.madinahImages[3]]}
+      />
+      <HajjTrainingPosters
+        title="Upcoming Hajj training sessions for pilgrims who want to prepare properly"
+        description="Before travel, we help pilgrims understand the journey ahead through training that covers rituals, logistics, and practical expectations."
       />
       <section className="section-shell section-space">
         <SectionHeading eyebrow="FAQs" title="Planning for Hajj" description="Helpful information for travelers preparing early." />

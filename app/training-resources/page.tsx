@@ -1,5 +1,6 @@
 import videos from "@/data/videos.json";
 
+import { HajjTrainingPosters } from "@/components/hajj-training-posters";
 import { InquiryCTA } from "@/components/site-sections";
 import { PageHero } from "@/components/ui/page-hero";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -22,6 +23,11 @@ export default function TrainingResourcesPage() {
         eyebrow="Training and Resources"
         title="Video guidance for pilgrims and travelers"
         description="Browse educational content from Mufti Furqan Mamji, including Umrah guidance, preparation reminders, and spiritual reflections."
+      />
+      <HajjTrainingPosters
+        eyebrow="Live Training Posters"
+        title="Upcoming Hajj training announcements"
+        description="Alongside our video library, these posters highlight current Hajj training sessions for pilgrims who want timely preparation and practical guidance."
       />
       <section className="section-shell section-space space-y-16">
         {categories.map((category) => {

@@ -1,29 +1,35 @@
 import { HeroSection } from "@/components/hero-section";
 import {
   ClientVideoReviewsSection,
+  FinalCTASection,
   FeaturedPackages,
   GoogleReviewsSection,
   GuidedUmrahHighlight,
   HomeTrainingSection,
-  InquiryCTA,
+  ProblemSection,
   ServicesOverview,
+  SolutionSection,
   TestimonialsSection,
   TrustBand,
+  WhyChooseUsSection,
 } from "@/components/site-sections";
 
 export default function HomePage() {
   return (
     <>
       <HeroSection />
-      <ServicesOverview />
       <TrustBand />
+      <ProblemSection />
+      <SolutionSection />
+      <ServicesOverview />
       <FeaturedPackages />
+      <WhyChooseUsSection />
       <GuidedUmrahHighlight />
       <HomeTrainingSection />
       <GoogleReviewsSection />
       <ClientVideoReviewsSection />
       <TestimonialsSection />
-      <InquiryCTA />
+      <FinalCTASection />
     </>
   );
 }
