@@ -1,8 +1,10 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Building2, Hotel, MapPin, Plane, Timer } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import type { TravelPackage } from "@/lib/packages";
+import { siteConfig } from "@/lib/site";
 
 const themeStyles: Record<TravelPackage["theme"], string> = {
   Hajj: "from-slate-950 via-slate-800 to-amber-700",
@@ -11,22 +13,54 @@ const themeStyles: Record<TravelPackage["theme"], string> = {
   International: "from-indigo-950 via-blue-700 to-sky-400",
 };
 
+function getPackageImage(pkg: TravelPackage) {
+  if (pkg.theme === "Hajj") {
+    return pkg.id.includes("signature")
+      ? siteConfig.assets.media.madinahImages[0]
+      : siteConfig.assets.media.makkahImages[0];
+  }
+
+  if (pkg.theme === "Umrah") {
+    if (pkg.id.includes("14")) return siteConfig.assets.media.makkahImages[3];
+    if (pkg.id.includes("12")) return siteConfig.assets.media.madinahImages[3];
+    return siteConfig.assets.media.makkahImages[1];
+  }
+
+  return null;
+}
+
 export function PackageCard({ pkg }: { pkg: TravelPackage }) {
   const packageHref = `/packages/${pkg.id}`;
+  const packageImage = getPackageImage(pkg);
+  const isSacredPackage = pkg.theme === "Hajj" || pkg.theme === "Umrah";
 
   return (
     <div className="mesh-panel gold-ring flex h-full flex-col overflow-hidden rounded-[2rem] border border-primary/10">
-      <div className={`relative aspect-[5/3] bg-gradient-to-br ${themeStyles[pkg.theme]} p-6`}>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.28),transparent_34%)]" />
+      <div className={`relative aspect-[5/3] ${isSacredPackage ? "p-0" : `bg-gradient-to-br ${themeStyles[pkg.theme]} p-6`}`}>
+        {packageImage ? (
+          <>
+            <Image
+              src={packageImage}
+              alt={pkg.location}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+            />
+            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(5,12,30,0.18),rgba(8,15,30,0.48),rgba(8,15,30,0.78))]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.18),transparent_34%)]" />
+          </>
+        ) : (
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.28),transparent_34%)]" />
+        )}
         <div className="relative flex h-full flex-col justify-between">
-          <span className="w-fit rounded-full bg-white/85 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-primary">
+          <span className="m-6 w-fit rounded-full bg-white/90 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-primary">
             {pkg.heroLabel}
           </span>
-          <div className="max-w-xs">
-            <p className={`text-sm uppercase tracking-[0.24em] ${pkg.theme === "Umrah" ? "text-primary/70" : "text-white/80"}`}>
+          <div className="max-w-xs px-6 pb-6">
+            <p className={`text-sm uppercase tracking-[0.24em] ${isSacredPackage ? "text-white/80" : pkg.theme === "Umrah" ? "text-primary/70" : "text-white/80"}`}>
               {pkg.duration}
             </p>
-            <p className={`mt-2 text-lg font-semibold ${pkg.theme === "Umrah" ? "text-foreground" : "text-white"}`}>{pkg.location}</p>
+            <p className={`mt-2 text-lg font-semibold ${isSacredPackage ? "text-white" : pkg.theme === "Umrah" ? "text-foreground" : "text-white"}`}>{pkg.location}</p>
           </div>
         </div>
       </div>
