@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
+import { submitToFormspree } from "@/lib/formspree";
 
 const inquirySchema = z.object({
   name: z.string().min(2, "Please enter your name."),
@@ -39,12 +40,13 @@ export function InquiryForm() {
   const onSubmit = async (values: InquiryValues) => {
     setStatus("idle");
 
-    const response = await fetch("/api/inquiries", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(values),
+    const response = await submitToFormspree({
+      formType: "general-inquiry",
+      name: values.name,
+      phone: values.phone,
+      email: values.email,
+      serviceType: values.serviceType,
+      message: values.message,
     });
 
     if (!response.ok) {
@@ -90,7 +92,7 @@ export function InquiryForm() {
           {isSubmitting ? <LoaderCircle className="mr-2 h-4 w-4 animate-spin" /> : <SendHorizonal className="mr-2 h-4 w-4" />}
           Send Inquiry
         </Button>
-        {status === "success" ? <p className="text-sm text-primary">Your inquiry has been saved successfully.</p> : null}
+        {status === "success" ? <p className="text-sm text-primary">Your inquiry has been sent successfully.</p> : null}
         {status === "error" ? <p className="text-sm text-red-600">Something went wrong. Please try again.</p> : null}
       </div>
     </form>

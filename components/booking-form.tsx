@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
+import { submitToFormspree } from "@/lib/formspree";
 import type { TravelPackage } from "@/lib/packages";
 
 const bookingSchema = z.object({
@@ -46,17 +47,19 @@ export function BookingForm({ pkg }: { pkg: TravelPackage }) {
   const onSubmit = async (values: BookingValues) => {
     setStatus("idle");
 
-    const response = await fetch("/api/inquiries", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        inquiryType: "package-booking",
-        packageId: pkg.id,
-        packageName: pkg.title,
-        ...values,
-      }),
+    const response = await submitToFormspree({
+      formType: "package-booking",
+      packageId: pkg.id,
+      packageName: pkg.title,
+      packageDuration: pkg.duration,
+      name: values.name,
+      fatherName: values.fatherName,
+      cnic: values.cnic ?? "",
+      category: values.category,
+      email: values.email,
+      phone: values.phone,
+      service: values.service,
+      message: values.message ?? "",
     });
 
     if (!response.ok) {
