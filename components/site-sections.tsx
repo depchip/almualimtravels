@@ -95,7 +95,7 @@ const serviceCards = [
 const differentiators = [
   "Scholar-led Umrah guidance through Mufti Furqan Mamji",
   "Preparation before departure, not just package selling",
-  "Strong public trust with 4.9 Google rating and 297 reviews",
+  "Strong public trust with 5.0 Google rating and 532 reviews",
   "Travel support designed for families, first-time pilgrims, and groups",
 ];
 

@@ -4,6 +4,7 @@ import { Cormorant_Garamond, Manrope } from "next/font/google";
 import { FloatingActions } from "@/components/floating-actions";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
+import { UmrahPopup } from "@/components/umrah-popup";
 import { buildMetadata, organizationSchema, personSchema } from "@/lib/seo";
 
 import "./globals.css";
@@ -42,6 +43,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <main className="min-h-screen pb-24 md:pb-0">{children}</main>
         <Footer />
         <FloatingActions />
+        <UmrahPopup />
       </body>
     </html>
   );

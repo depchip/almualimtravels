@@ -13,12 +13,14 @@ import {
   TrustBand,
   WhyChooseUsSection,
 } from "@/components/site-sections";
+import { UmrahPosterBanner } from "@/components/umrah-poster-banner";
 
 export default function HomePage() {
   return (
     <>
       <HeroSection />
       <TrustBand />
+      <UmrahPosterBanner />
       <ProblemSection />
       <SolutionSection />
       <ServicesOverview />

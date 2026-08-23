@@ -6,8 +6,8 @@ export const siteConfig = {
   phoneNumbers: ["+92 321-3110100", "+92 311-2774836", "+92 342-8011000"],
   address: "48-B, RJ Mall, Main Rashid Minhas Road, Karachi, Pakistan",
   googleRating: {
-    score: 4.9,
-    totalReviews: 297,
+    score: 5.0,
+    totalReviews: 532,
     label: "Google Reviews",
   },
   social: {
