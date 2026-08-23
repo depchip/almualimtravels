@@ -338,7 +338,7 @@ export function GoogleReviewsSection() {
           description="People trust AlMuallim because they can see the experience others had before them."
         />
         <div className="rounded-[2rem] border border-primary/10 bg-white/80 px-6 py-5 shadow-sm">
-          <p className="font-display text-5xl font-semibold text-foreground">{siteConfig.googleRating.score}</p>
+          <p className="font-display text-5xl font-semibold text-foreground">{siteConfig.googleRating.score.toFixed(1)}</p>
           <div className="mt-2 flex gap-1">
             {Array.from({ length: 5 }).map((_, index) => (
               <Sparkles key={index} className="h-4 w-4 fill-accent text-accent" />
