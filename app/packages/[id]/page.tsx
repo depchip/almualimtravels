@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, BadgeCheck, CircleCheckBig } from "lucide-react";
 
 import { BookingForm } from "@/components/booking-form";
+import { HajjPackageDetails } from "@/components/hajj-package-details";
 import { Button } from "@/components/ui/button";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { buildMetadata } from "@/lib/seo";
@@ -83,6 +84,8 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
           </div>
         </div>
       </section>
+
+      <HajjPackageDetails pkg={pkg} />
 
       <section className="section-shell section-space grid gap-8 lg:grid-cols-[0.95fr,1.05fr]">
         <div>

@@ -15,7 +15,7 @@ const themeStyles: Record<TravelPackage["theme"], string> = {
 
 function getPackageImage(pkg: TravelPackage) {
   if (pkg.theme === "Hajj") {
-    return pkg.id.includes("signature")
+    return pkg.id.includes("fixed-aziziya")
       ? siteConfig.assets.media.madinahImages[0]
       : siteConfig.assets.media.makkahImages[0];
   }
@@ -74,6 +74,11 @@ export function PackageCard({ pkg }: { pkg: TravelPackage }) {
         </div>
 
         <p className="mt-5 text-2xl font-bold text-foreground">{pkg.price}</p>
+        {pkg.pricingTiers && pkg.pricingTiers.length > 1 ? (
+          <p className="mt-1 text-xs font-medium uppercase tracking-[0.14em] text-primary/70">
+            {pkg.pricingTiers.length} sharing options available
+          </p>
+        ) : null}
         <p className="mt-4 text-sm leading-7 text-muted-foreground">{pkg.summary}</p>
 
         <div className="mt-6 grid gap-3 text-sm text-foreground/90">

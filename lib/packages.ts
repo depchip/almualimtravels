@@ -2,6 +2,26 @@ import packagesData from "@/data/packages.json";
 
 export type PackageType = "Hajj" | "Umrah" | "Domestic Tour" | "International Tour";
 
+export type HajjItineraryStep = {
+  range: string;
+  stay: string;
+};
+
+export type HajjAccommodation = {
+  city: string;
+  stay: string;
+};
+
+export type HajjPricingTier = {
+  label: string;
+  amount: string;
+};
+
+export type HajjConsultant = {
+  name: string;
+  phone: string;
+};
+
 export type TravelPackage = {
   id: string;
   type: PackageType;
@@ -18,6 +38,14 @@ export type TravelPackage = {
   highlights: string[];
   inclusions: string[];
   bookingCategories: string[];
+  posterImage?: string;
+  maktab?: string;
+  zone?: string;
+  qurbaniIncluded?: boolean;
+  itinerary?: HajjItineraryStep[];
+  accommodation?: HajjAccommodation[];
+  pricingTiers?: HajjPricingTier[];
+  consultants?: HajjConsultant[];
 };
 
 export const allPackages = packagesData as TravelPackage[];

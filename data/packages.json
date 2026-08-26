@@ -1,57 +1,110 @@
 [
   {
-    "id": "hajj-premium-18-nights",
+    "id": "hajj-special-package-26-days",
     "type": "Hajj",
-    "title": "Premium Hajj Package",
-    "subtitle": "Comfort-focused Hajj journey with scholar-led preparation",
-    "duration": "18 Nights",
-    "location": "Makkah, Madinah & Mina",
-    "price": "Rs. 1,850,000 / Person",
+    "title": "Hajj Special Package",
+    "subtitle": "26-day Hajj journey with Shohda Hotel comfort, travelling alongside Mufti Furqan Ahmed Majji",
+    "duration": "26 Days",
+    "location": "Makkah, Mina, Arafat & Madinah",
+    "price": "Rs. 1,790,000 / Person (Sharing)",
     "heroLabel": "Hajj Package",
     "route": "/hajj-packages",
     "theme": "Hajj",
-    "summary": "A guided Hajj experience with comfortable stays, practical training, and careful support from departure to return.",
-    "description": "This package is designed for pilgrims who want a structured Hajj journey with dependable planning, pre-travel orientation, and a spiritually focused group environment.",
+    "summary": "A spiritually guided 26-day Hajj journey with Shohda Hotel comfort in Makkah, Aziziya stays close to the sacred sites, and Madinah accommodation near Masjid an-Nabawi.",
+    "description": "Travel this Hajj season as a rafiq-e-safar with Mufti Furqan Ahmed Majji. This special 26-day itinerary opens with full-board comfort at Al Shohda Hotel in Makkah, moves through Aziziya for the days of Hajj, and closes with restful nights in Madinah Markaziya, all fully coordinated from visa to Ziyarat.",
     "highlights": [
-      "Pre-departure Hajj training sessions",
-      "Comfortable hotels in Makkah and Madinah",
-      "Ground coordination during key rites",
-      "Support for first-time and returning pilgrims"
+      "Rafiq-e-safar with Mufti Furqan Ahmed Majji",
+      "Al Shohda Hotel with full board in Makkah",
+      "Air-conditioned camps in Mina and Arafat",
+      "05 days of Hajj services guided by your Muallim"
     ],
     "inclusions": [
-      "10 Nights Makkah",
-      "08 Nights Madinah",
-      "4 or 5 star accommodation",
-      "Air travel and visa assistance"
+      "Airline ticket included",
+      "Visa processing and Hajj services",
+      "Seat-by-seat air-conditioned bus transport",
+      "Ziyarat included",
+      "Qurbani not included"
     ],
-    "bookingCategories": ["Economic", "Standard", "Premium"]
+    "bookingCategories": ["Sharing", "Aziziya Quad Sharing", "Aziziya Triple Sharing", "Aziziya Double Sharing"],
+    "posterImage": "/assets/media/posters/hajj/hajj-package-1.jpeg",
+    "maktab": "Maktab C",
+    "zone": "Zone 5",
+    "qurbaniIncluded": false,
+    "itinerary": [
+      { "range": "21 Zil Qad – 04 Zilhajj", "stay": "Al Shohda Hotel, Makkah — Full Board" },
+      { "range": "04 – 07 Zilhajj", "stay": "Aziziya Building, Makkah" },
+      { "range": "08 – 12 Zilhajj", "stay": "Hajj Days — Mina, Arafat & Muzdalifah" },
+      { "range": "12 – 14 Zilhajj", "stay": "Aziziya Building, Makkah" },
+      { "range": "14 – 17 Zilhajj", "stay": "Madinah, Markaziya (100–250m) — Full Board" }
+    ],
+    "accommodation": [
+      { "city": "Makkah", "stay": "Al Shohda Hotel — Full Board" },
+      { "city": "Makkah", "stay": "Aziziya Building — Full Board" },
+      { "city": "Madinah", "stay": "Markaziya, 100–250 Meters — Full Board" }
+    ],
+    "pricingTiers": [
+      { "label": "Sharing", "amount": "Rs. 1,790,000" },
+      { "label": "Aziziya Quad Sharing", "amount": "Rs. 1,810,000" },
+      { "label": "Aziziya Triple Sharing", "amount": "Rs. 1,940,000" },
+      { "label": "Aziziya Double Sharing", "amount": "Rs. 2,060,000" }
+    ],
+    "consultants": [
+      { "name": "Furqan Ahmed", "phone": "0321-3110100" },
+      { "name": "Rashid Sattar", "phone": "0333-3683979" },
+      { "name": "Molana Nisar", "phone": "0311-2774836" }
+    ]
   },
   {
-    "id": "hajj-signature-21-nights",
+    "id": "hajj-fixed-aziziya",
     "type": "Hajj",
-    "title": "Signature Hajj Package",
-    "subtitle": "Extended Hajj itinerary for travelers wanting extra comfort",
-    "duration": "21 Nights",
-    "location": "Makkah, Madinah & Sacred Sites",
-    "price": "Rs. 2,250,000 / Person",
+    "title": "Hajj Fixed Aziziya Package",
+    "subtitle": "Dependable Aziziya-based Hajj journey with fixed, transparent pricing",
+    "duration": "17 Days (01–17 Zilhajj)",
+    "location": "Makkah (Aziziya) & Madinah",
+    "price": "Rs. 1,610,000 / Person (Sharing)",
     "heroLabel": "Hajj Package",
     "route": "/hajj-packages",
     "theme": "Hajj",
-    "summary": "A longer Hajj package with premium support, additional preparation, and carefully selected hotels close to key locations.",
-    "description": "This journey is arranged for pilgrims who want an elevated Hajj experience with more time in the Haramain and a calm, well-supported itinerary.",
+    "summary": "A fixed-Aziziya Hajj package for pilgrims who want dependable accommodation, clear pricing, and full support through every stage of Hajj.",
+    "description": "This package keeps you in the Aziziya Building throughout the days of Hajj in Makkah, then moves to Madinah Markaziya to close the journey, with the same trusted guidance, visa handling, and Ziyarat support led by Mufti Furqan Ahmed Majji's team.",
     "highlights": [
-      "Scholar-led guidance and group support",
-      "Well-paced itinerary and logistics support",
-      "Priority focus on comfort and clarity",
-      "Ideal for families and senior travelers"
+      "Rafiq-e-safar with Mufti Furqan Ahmed Majji",
+      "Fixed Aziziya Building accommodation in Makkah",
+      "Air-conditioned camps in Mina and Arafat",
+      "05 days of Hajj services guided by your Muallim"
     ],
     "inclusions": [
-      "12 Nights Makkah",
-      "09 Nights Madinah",
-      "5 star accommodation",
-      "Air travel and transport support"
+      "Airline ticket included",
+      "Visa processing and Hajj services",
+      "Seat-by-seat air-conditioned bus transport",
+      "Ziyarat included",
+      "Qurbani not included"
     ],
-    "bookingCategories": ["Standard", "Premium"]
+    "bookingCategories": ["Sharing", "Triple Sharing", "Double Sharing"],
+    "posterImage": "/assets/media/posters/hajj/hajj-package-2.jpeg",
+    "maktab": "Maktab C",
+    "zone": "Zone 5",
+    "qurbaniIncluded": false,
+    "itinerary": [
+      { "range": "01 – 07 Zilhajj", "stay": "Aziziya Building, Makkah" },
+      { "range": "08 – 12 Zilhajj", "stay": "Hajj Days — Mina, Arafat & Muzdalifah" },
+      { "range": "12 – 14 Zilhajj", "stay": "Aziziya Building, Makkah" },
+      { "range": "14 – 17 Zilhajj", "stay": "Madinah, Markaziya — Full Board" }
+    ],
+    "accommodation": [
+      { "city": "Makkah", "stay": "Aziziya Building — Full Board" },
+      { "city": "Madinah", "stay": "Markaziya, 100–250 Meters — Full Board" }
+    ],
+    "pricingTiers": [
+      { "label": "Sharing", "amount": "Rs. 1,610,000" },
+      { "label": "Triple Sharing", "amount": "Rs. 1,710,000" },
+      { "label": "Double Sharing", "amount": "Rs. 1,835,000" }
+    ],
+    "consultants": [
+      { "name": "Furqan Ahmed", "phone": "0321-3110100" },
+      { "name": "Rashid Sattar", "phone": "0333-3683979" },
+      { "name": "Molana Nisar", "phone": "0311-2774836" }
+    ]
   },
   {
     "id": "umrah-executive-14-nights",

@@ -41,6 +41,10 @@ export const siteConfig = {
         "/assets/media/posters/hajj/hajj-training-1.jpeg",
         "/assets/media/posters/hajj/hajj-training-2.jpeg",
       ],
+      hajjPackagePosters: [
+        "/assets/media/posters/hajj/hajj-package-1.jpeg",
+        "/assets/media/posters/hajj/hajj-package-2.jpeg",
+      ],
       makkahImages: [
         "/assets/media/images/makkah/makkah-1.jpg",
         "/assets/media/images/makkah/makkah-2.jpg",
