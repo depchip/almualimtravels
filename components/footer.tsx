@@ -5,7 +5,7 @@ import { siteConfig } from "@/lib/site";
 
 export function Footer() {
   return (
-    <footer className="border-t border-primary/10 bg-primary text-primary-foreground">
+    <footer className="border-t border-primary/10 bg-primary pb-24 text-primary-foreground md:pb-0">
       <div className="section-shell py-14">
         <div className="grid gap-8 rounded-[2rem] border border-white/10 bg-white/5 p-6 backdrop-blur-sm md:grid-cols-[1.2fr,0.9fr,1fr] md:p-8">
           <div>

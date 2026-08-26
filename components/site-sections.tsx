@@ -124,7 +124,7 @@ export function ProblemSection() {
         title="Planning sacred travel can feel overwhelming"
         description="If the journey matters deeply, you want more than basic booking. You want calm, clarity, and support you can trust."
       />
-      <div className="mt-12 grid gap-6 lg:grid-cols-3">
+      <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {problemPoints.map((point, index) => (
           <AnimatedSection key={point.title} delay={index * 0.08}>
             <div className="soft-card h-full p-6 shadow-sm">
@@ -251,7 +251,7 @@ export function FeaturedPackages() {
           Explore packages <ArrowRight className="ml-1 inline h-4 w-4" />
         </Link>
       </div>
-      <div className="mt-12 grid gap-6 xl:grid-cols-3">
+      <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
         {featured.map((pkg, index) => (
           <AnimatedSection key={pkg.id} delay={index * 0.08}>
             <PackageCard pkg={pkg} />
@@ -319,7 +319,7 @@ export function HomeTrainingSection() {
           View resources <ArrowRight className="ml-1 inline h-4 w-4" />
         </Link>
       </div>
-      <div className="mt-12 grid gap-6 lg:grid-cols-3">
+      <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {trainingVideos.map((video) => (
           <VideoCard key={video.id} video={video} />
         ))}
@@ -347,7 +347,7 @@ export function GoogleReviewsSection() {
           <p className="mt-3 text-sm text-muted-foreground">{siteConfig.googleRating.totalReviews} Google Reviews</p>
         </div>
       </div>
-      <div className="mt-12 grid gap-6 lg:grid-cols-3">
+      <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {testimonials.slice(0, 3).map((review, index) => (
           <AnimatedSection key={review.name} delay={index * 0.08}>
             <GoogleReviewCard review={review} />
@@ -391,7 +391,7 @@ export function TestimonialsSection() {
         description="Clear communication. Thoughtful organization. Real guidance. Less stress."
         align="center"
       />
-      <div className="mt-12 grid gap-6 lg:grid-cols-3">
+      <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {testimonials.slice(2, 5).map((testimonial, index) => (
           <AnimatedSection key={testimonial.name} delay={index * 0.08}>
             <TestimonialCard testimonial={testimonial} />
