@@ -134,22 +134,22 @@
     "bookingCategories": ["Economic", "Standard", "Premium"]
   },
   {
-    "id": "umrah-executive-12-nights",
+    "id": "umrah-executive-20-nights",
     "type": "Umrah",
     "title": "Executive Umrah Package",
-    "subtitle": "Balanced Umrah stay with strong value and comfort",
-    "duration": "12 Nights",
+    "subtitle": "Extended 20-night Umrah stay with strong value and 3-star comfort",
+    "duration": "20 Nights",
     "location": "Makkah & Madinah",
     "price": "Rs. 300,000 / Person",
     "heroLabel": "Umrah Package",
     "route": "/umrah-packages",
     "theme": "Umrah",
-    "summary": "A strong-value Umrah package that offers meaningful time in Makkah and Madinah with comfortable accommodation and travel support.",
-    "description": "This package is ideal for families and individuals looking for a moderate-duration Umrah with dependable planning and easy support.",
+    "summary": "A strong-value 20-night Umrah package that offers extended time in Makkah and Madinah with comfortable 3-star accommodation and travel support.",
+    "description": "This package is ideal for families and individuals looking for an extended Umrah journey with dependable planning, easy support, and comfortable 3-star stays in both cities.",
     "highlights": [
-      "06 Nights Makkah",
-      "05 Nights Madinah",
-      "5 star accommodation",
+      "12 Nights Makkah",
+      "08 Nights Madinah",
+      "3 star accommodation",
       "Saudi Airlines or similar carrier"
     ],
     "inclusions": [
@@ -161,22 +161,22 @@
     "bookingCategories": ["Economic", "Standard", "Premium"]
   },
   {
-    "id": "umrah-economy-7-nights",
+    "id": "umrah-economy-20-nights",
     "type": "Umrah",
     "title": "Economy Umrah Package",
-    "subtitle": "Short, budget-friendly Umrah package for quick and focused travel",
-    "duration": "7 Nights",
+    "subtitle": "Extended, budget-friendly Umrah package with economy hotel comfort",
+    "duration": "20 Nights",
     "location": "Makkah & Madinah",
-    "price": "Rs. 200,000 / Person",
+    "price": "Rs. 225,000 / Person",
     "heroLabel": "Umrah Package",
     "route": "/umrah-packages",
     "theme": "Umrah",
-    "summary": "Our most affordable Umrah option, designed for travelers seeking a compact itinerary without compromising on support and planning.",
-    "description": "This package is suitable for professionals, families with limited time, or pilgrims looking for a shorter and more affordable Umrah journey.",
+    "summary": "Our most affordable extended Umrah option, designed for travelers seeking 20 nights in Makkah and Madinah with economy hotel comfort.",
+    "description": "This package is suitable for pilgrims looking for a longer Umrah journey at an accessible price, with economy hotel accommodation in both Makkah and Madinah.",
     "highlights": [
-      "03 Nights Makkah",
-      "03 Nights Madinah",
-      "5 star accommodation",
+      "11 Nights Makkah",
+      "09 Nights Madinah",
+      "Economy hotel accommodation",
       "Saudi Airlines or similar carrier"
     ],
     "inclusions": [
