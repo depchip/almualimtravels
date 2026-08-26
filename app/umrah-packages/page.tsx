@@ -1,6 +1,7 @@
 import { FAQSection } from "@/components/faq-section";
 import { PackageGrid } from "@/components/page-grid";
 import { SacredGallery } from "@/components/sacred-gallery";
+import { UmrahPosterBanner } from "@/components/umrah-poster-banner";
 import { InquiryCTA } from "@/components/site-sections";
 import { PageHero } from "@/components/ui/page-hero";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -32,6 +33,12 @@ export default function UmrahPackagesPage() {
           <PackageGrid type="Umrah" />
         </div>
       </section>
+      <UmrahPosterBanner
+        eyebrow="Official Poster"
+        title="See the official September 2026 Umrah poster"
+        description="Review the printed poster for full pricing tiers and travel details, then reach out to book your seat."
+        href="/contact"
+      />
       <SacredGallery
         eyebrow="Journey Atmosphere"
         title="The beauty of Makkah and Madinah"
