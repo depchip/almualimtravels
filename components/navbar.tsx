@@ -86,16 +86,18 @@ export function Navbar() {
                 Umrah
                 <ChevronDown className="ml-1.5 h-4 w-4" />
               </button>
-              <div className="pointer-events-none absolute left-1/2 top-full z-20 mt-3 w-56 -translate-x-1/2 rounded-[1.25rem] border border-primary/10 bg-white/95 p-2 opacity-0 shadow-[0_18px_50px_rgba(15,23,42,0.12)] transition duration-200 group-hover:pointer-events-auto group-hover:opacity-100">
-                {umrahLinks.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="block rounded-xl px-4 py-3 text-sm font-medium text-foreground/80 hover:bg-primary/5 hover:text-primary"
-                  >
-                    {link.label}
-                  </Link>
-                ))}
+              <div className="pointer-events-none absolute left-1/2 top-full z-20 w-56 -translate-x-1/2 pt-3 opacity-0 transition duration-200 group-hover:pointer-events-auto group-hover:opacity-100">
+                <div className="rounded-[1.25rem] border border-primary/10 bg-white/95 p-2 shadow-[0_18px_50px_rgba(15,23,42,0.12)]">
+                  {umrahLinks.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className="block rounded-xl px-4 py-3 text-sm font-medium text-foreground/80 hover:bg-primary/5 hover:text-primary"
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
               </div>
             </div>
             {primaryLinks.slice(1).map((link) => (

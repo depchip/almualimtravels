@@ -2,22 +2,22 @@ import packagesData from "@/data/packages.json";
 
 export type PackageType = "Hajj" | "Umrah" | "Domestic Tour" | "International Tour";
 
-export type HajjItineraryStep = {
+export type ItineraryStep = {
   range: string;
   stay: string;
 };
 
-export type HajjAccommodation = {
+export type AccommodationStay = {
   city: string;
   stay: string;
 };
 
-export type HajjPricingTier = {
+export type PricingTier = {
   label: string;
   amount: string;
 };
 
-export type HajjConsultant = {
+export type PackageConsultant = {
   name: string;
   phone: string;
 };
@@ -42,10 +42,11 @@ export type TravelPackage = {
   maktab?: string;
   zone?: string;
   qurbaniIncluded?: boolean;
-  itinerary?: HajjItineraryStep[];
-  accommodation?: HajjAccommodation[];
-  pricingTiers?: HajjPricingTier[];
-  consultants?: HajjConsultant[];
+  itinerary?: ItineraryStep[];
+  accommodation?: AccommodationStay[];
+  pricingTiers?: PricingTier[];
+  consultants?: PackageConsultant[];
+  notes?: string[];
 };
 
 export const allPackages = packagesData as TravelPackage[];

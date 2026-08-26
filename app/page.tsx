@@ -13,6 +13,7 @@ import {
   TrustBand,
   WhyChooseUsSection,
 } from "@/components/site-sections";
+import { HajjPosterBanner } from "@/components/hajj-poster-banner";
 import { UmrahPosterBanner } from "@/components/umrah-poster-banner";
 
 export default function HomePage() {
@@ -20,6 +21,7 @@ export default function HomePage() {
     <>
       <HeroSection />
       <TrustBand />
+      <HajjPosterBanner />
       <UmrahPosterBanner />
       <ProblemSection />
       <SolutionSection />

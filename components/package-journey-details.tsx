@@ -1,10 +1,10 @@
 import Image from "next/image";
-import { BedDouble, MapPinned, Phone, Users } from "lucide-react";
+import { BadgeInfo, BedDouble, MapPinned, Phone, Users } from "lucide-react";
 
 import { SectionHeading } from "@/components/ui/section-heading";
 import type { TravelPackage } from "@/lib/packages";
 
-export function HajjPackageDetails({ pkg }: { pkg: TravelPackage }) {
+export function PackageJourneyDetails({ pkg }: { pkg: TravelPackage }) {
   if (!pkg.itinerary || !pkg.pricingTiers) {
     return null;
   }
@@ -13,7 +13,7 @@ export function HajjPackageDetails({ pkg }: { pkg: TravelPackage }) {
     <section className="section-shell section-space">
       <SectionHeading
         eyebrow="Itinerary & Pricing"
-        title="A day-by-day look at this Hajj journey"
+        title={`A closer look at this ${pkg.type} journey`}
         description="Every stage of accommodation and travel is planned in advance so you always know what to expect."
       />
 
@@ -53,6 +53,17 @@ export function HajjPackageDetails({ pkg }: { pkg: TravelPackage }) {
               ))}
             </div>
           ) : null}
+
+          {pkg.notes ? (
+            <div className="mt-8 space-y-3 border-t border-primary/10 pt-6">
+              {pkg.notes.map((note) => (
+                <div key={note} className="flex items-start gap-3">
+                  <BadgeInfo className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                  <p className="text-sm leading-6 text-muted-foreground">{note}</p>
+                </div>
+              ))}
+            </div>
+          ) : null}
         </div>
 
         <div className="flex flex-col gap-6">
@@ -87,7 +98,7 @@ export function HajjPackageDetails({ pkg }: { pkg: TravelPackage }) {
             <div className="rounded-[2rem] border border-primary/10 bg-white/80 p-6 sm:p-8">
               <div className="flex items-center gap-2">
                 <Users className="h-4 w-4 text-primary" />
-                <h3 className="font-display text-lg font-semibold">Speak with our Hajj consultants</h3>
+                <h3 className="font-display text-lg font-semibold">Speak with our {pkg.type} consultants</h3>
               </div>
               <div className="mt-5 grid gap-3">
                 {pkg.consultants.map((consultant) => (

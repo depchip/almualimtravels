@@ -107,85 +107,151 @@
     ]
   },
   {
-    "id": "umrah-executive-14-nights",
+    "id": "umrah-sept-2026-package-1",
     "type": "Umrah",
-    "title": "Executive Umrah Package",
-    "subtitle": "A complete Umrah package with comfort and preparation",
-    "duration": "14 Nights",
+    "title": "Umrah Package 1",
+    "subtitle": "Lamar Ajyad & Shaza Munawarah — 20-day September 2026 group Umrah",
+    "duration": "20 Days",
     "location": "Makkah & Madinah",
-    "price": "Rs. 400,000 / Person",
+    "price": "Rs. 237,500 / Person (Sharing)",
     "heroLabel": "Umrah Package",
     "route": "/umrah-packages",
     "theme": "Umrah",
-    "summary": "A premium Umrah package with balanced time in both Haramain, suitable for pilgrims seeking a spiritually focused and comfortable journey.",
-    "description": "This package combines practical support, hotel comfort, and pre-travel guidance so pilgrims can approach Umrah with confidence and calm.",
+    "summary": "A 20-day guided group Umrah departing 16 September 2026, staying at Lamar Ajyad in Makkah with shuttle service and Shaza Munawarah in Madinah, 950 meters from Masjid an-Nabawi.",
+    "description": "Travel as part of a large Umrah group with Mufti Furqan Ahmed Majji as your rafiq-e-safar. This 20-day September 2026 departure includes direct FlyJinnah flights, guided ziyarat covering over 100 sites in Makkah and Madinah, and multimedia Umrah training before you travel.",
     "highlights": [
-      "08 Nights Makkah",
-      "06 Nights Madinah",
-      "5 star accommodation",
-      "Saudi Airlines or similar carrier"
+      "Rafiq-e-safar with Mufti Furqan Ahmed Majji",
+      "Departs 16 September 2026 via FlyJinnah",
+      "Lamar Ajyad (3-Star) in Makkah with shuttle service",
+      "Shaza Munawarah, 950 meters from Masjid an-Nabawi"
     ],
     "inclusions": [
-      "Daily support and guidance",
-      "Visa assistance",
-      "Airport transfers",
-      "Preparation resources before departure"
+      "Umrah visa",
+      "Hotel booking",
+      "Direct flight tickets (FlyJinnah)",
+      "Intercity transfers",
+      "Multimedia Umrah training",
+      "Ziyarat in Makkah and Madinah"
     ],
-    "bookingCategories": ["Economic", "Standard", "Premium"]
+    "bookingCategories": ["Sharing", "Quad Sharing", "Triple Sharing", "Double Sharing"],
+    "posterImage": "/UmrahPkgSept.jpeg",
+    "itinerary": [
+      { "range": "16 Sep 2026", "stay": "Depart Karachi → Jeddah (FlyJinnah, 20:15–22:30)" },
+      { "range": "16 Sep – 05 Oct 2026", "stay": "20-day guided stay across Makkah & Madinah" },
+      { "range": "05 Oct 2026", "stay": "Depart Jeddah → Karachi (FlyJinnah, 23:30–05:40)" }
+    ],
+    "accommodation": [
+      { "city": "Makkah", "stay": "Lamar Ajyad (3-Star) — Shuttle Service" },
+      { "city": "Madinah", "stay": "Shaza Munawarah (Economy Hotel) — 950 Meters" }
+    ],
+    "pricingTiers": [
+      { "label": "Sharing", "amount": "Rs. 237,500" },
+      { "label": "Quad Sharing", "amount": "Rs. 242,500" },
+      { "label": "Triple Sharing", "amount": "Rs. 253,500" },
+      { "label": "Double Sharing", "amount": "Rs. 280,500" }
+    ],
+    "notes": [
+      "Child package cost is the same as adult; infant fare Rs. 95,000",
+      "Special ziyarat with Mufti Furqan Ahmed Majji covering Badr, Taif and Hudaybiyyah"
+    ]
   },
   {
-    "id": "umrah-executive-12-nights",
+    "id": "umrah-sept-2026-package-2",
     "type": "Umrah",
-    "title": "Executive Umrah Package",
-    "subtitle": "Balanced Umrah stay with strong value and comfort",
-    "duration": "12 Nights",
+    "title": "Umrah Package 2",
+    "subtitle": "Lamar Ajyad & Grand Zower — 20-day September 2026 group Umrah",
+    "duration": "20 Days",
     "location": "Makkah & Madinah",
-    "price": "Rs. 300,000 / Person",
+    "price": "Rs. 251,500 / Person (Sharing)",
     "heroLabel": "Umrah Package",
     "route": "/umrah-packages",
     "theme": "Umrah",
-    "summary": "A strong-value Umrah package that offers meaningful time in Makkah and Madinah with comfortable accommodation and travel support.",
-    "description": "This package is ideal for families and individuals looking for a moderate-duration Umrah with dependable planning and easy support.",
+    "summary": "A 20-day guided group Umrah departing 16 September 2026, staying at Lamar Ajyad in Makkah with shuttle service and Grand Zower in Madinah Markazia, just 250 meters from Masjid an-Nabawi.",
+    "description": "Travel as part of a large Umrah group with Mufti Furqan Ahmed Majji as your rafiq-e-safar. This 20-day September 2026 departure includes direct FlyJinnah flights, closer Madinah accommodation in Markazia, guided ziyarat covering over 100 sites, and multimedia Umrah training before you travel.",
     "highlights": [
-      "06 Nights Makkah",
-      "05 Nights Madinah",
-      "5 star accommodation",
-      "Saudi Airlines or similar carrier"
+      "Rafiq-e-safar with Mufti Furqan Ahmed Majji",
+      "Departs 16 September 2026 via FlyJinnah",
+      "Lamar Ajyad (3-Star) in Makkah with shuttle service",
+      "Grand Zower, Madinah Markazia — 250 meters from Masjid an-Nabawi"
     ],
     "inclusions": [
-      "Visa processing support",
-      "Accommodation and transfers",
-      "Travel planning assistance",
-      "Suitable for families and small groups"
+      "Umrah visa",
+      "Hotel booking",
+      "Direct flight tickets (FlyJinnah)",
+      "Intercity transfers",
+      "Multimedia Umrah training",
+      "Ziyarat in Makkah and Madinah"
     ],
-    "bookingCategories": ["Economic", "Standard", "Premium"]
+    "bookingCategories": ["Sharing", "Quad Sharing", "Triple Sharing", "Double Sharing"],
+    "posterImage": "/UmrahPkgSept.jpeg",
+    "itinerary": [
+      { "range": "16 Sep 2026", "stay": "Depart Karachi → Jeddah (FlyJinnah, 20:15–22:30)" },
+      { "range": "16 Sep – 05 Oct 2026", "stay": "20-day guided stay across Makkah & Madinah" },
+      { "range": "05 Oct 2026", "stay": "Depart Jeddah → Karachi (FlyJinnah, 23:30–05:40)" }
+    ],
+    "accommodation": [
+      { "city": "Makkah", "stay": "Lamar Ajyad (3-Star) — Shuttle Service" },
+      { "city": "Madinah", "stay": "Grand Zower (Economy Hotel, Markazia) — 250 Meters" }
+    ],
+    "pricingTiers": [
+      { "label": "Sharing", "amount": "Rs. 251,500" },
+      { "label": "Quad Sharing", "amount": "Rs. 257,500" },
+      { "label": "Triple Sharing", "amount": "Rs. 271,500" },
+      { "label": "Double Sharing", "amount": "Rs. 309,500" }
+    ],
+    "notes": [
+      "Child package cost is the same as adult; infant fare Rs. 95,000",
+      "Special ziyarat with Mufti Furqan Ahmed Majji covering Badr, Taif and Hudaybiyyah"
+    ]
   },
   {
-    "id": "umrah-executive-7-nights",
+    "id": "umrah-sept-2026-package-3",
     "type": "Umrah",
-    "title": "Executive Umrah Package",
-    "subtitle": "Short Umrah package for quick and focused travel",
-    "duration": "7 Nights",
+    "title": "Umrah Package 3",
+    "subtitle": "Zilal un Nuzala & Grand Zower — 20-day September 2026 group Umrah",
+    "duration": "20 Days",
     "location": "Makkah & Madinah",
-    "price": "Rs. 200,000 / Person",
+    "price": "Rs. 281,500 / Person (Sharing)",
     "heroLabel": "Umrah Package",
     "route": "/umrah-packages",
     "theme": "Umrah",
-    "summary": "A short Umrah option designed for travelers seeking a more compact itinerary without compromising on support and planning.",
-    "description": "This package is suitable for professionals, families with limited time, or pilgrims looking for a shorter and more affordable Umrah journey.",
+    "summary": "A 20-day guided group Umrah departing 16 September 2026, staying at Zilal un Nuzala in Makkah, 550 meters from the Haram, and Grand Zower in Madinah Markazia, 250 meters from Masjid an-Nabawi.",
+    "description": "Travel as part of a large Umrah group with Mufti Furqan Ahmed Majji as your rafiq-e-safar. This is the most comfortable of the three September 2026 departures, with closer Makkah and Madinah accommodation, direct FlyJinnah flights, guided ziyarat covering over 100 sites, and multimedia Umrah training before you travel.",
     "highlights": [
-      "03 Nights Makkah",
-      "03 Nights Madinah",
-      "5 star accommodation",
-      "Saudi Airlines or similar carrier"
+      "Rafiq-e-safar with Mufti Furqan Ahmed Majji",
+      "Departs 16 September 2026 via FlyJinnah",
+      "Zilal un Nuzala, Makkah — 550 meters from the Haram",
+      "Grand Zower, Madinah Markazia — 250 meters from Masjid an-Nabawi"
     ],
     "inclusions": [
-      "Travel assistance and support",
-      "Visa coordination",
-      "Airport and hotel transfers",
-      "Compact and efficient itinerary"
+      "Umrah visa",
+      "Hotel booking",
+      "Direct flight tickets (FlyJinnah)",
+      "Intercity transfers",
+      "Multimedia Umrah training",
+      "Ziyarat in Makkah and Madinah"
     ],
-    "bookingCategories": ["Economic", "Standard"]
+    "bookingCategories": ["Sharing", "Quad Sharing", "Triple Sharing", "Double Sharing"],
+    "posterImage": "/UmrahPkgSept.jpeg",
+    "itinerary": [
+      { "range": "16 Sep 2026", "stay": "Depart Karachi → Jeddah (FlyJinnah, 20:15–22:30)" },
+      { "range": "16 Sep – 05 Oct 2026", "stay": "20-day guided stay across Makkah & Madinah" },
+      { "range": "05 Oct 2026", "stay": "Depart Jeddah → Karachi (FlyJinnah, 23:30–05:40)" }
+    ],
+    "accommodation": [
+      { "city": "Makkah", "stay": "Zilal un Nuzala (Star Hotel) — 550 Meters" },
+      { "city": "Madinah", "stay": "Grand Zower (Economy Hotel, Markazia) — 250 Meters" }
+    ],
+    "pricingTiers": [
+      { "label": "Sharing", "amount": "Rs. 281,500" },
+      { "label": "Quad Sharing", "amount": "Rs. 287,500" },
+      { "label": "Triple Sharing", "amount": "Rs. 313,500" },
+      { "label": "Double Sharing", "amount": "Rs. 369,500" }
+    ],
+    "notes": [
+      "Child package cost is the same as adult; infant fare Rs. 95,000",
+      "Special ziyarat with Mufti Furqan Ahmed Majji covering Badr, Taif and Hudaybiyyah"
+    ]
   },
   {
     "id": "domestic-hunza-family",

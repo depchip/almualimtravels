@@ -1,4 +1,5 @@
 import { FAQSection } from "@/components/faq-section";
+import { HajjPosterBanner } from "@/components/hajj-poster-banner";
 import { HajjTrainingPosters } from "@/components/hajj-training-posters";
 import { PackageGrid } from "@/components/page-grid";
 import { SacredGallery } from "@/components/sacred-gallery";
@@ -33,6 +34,11 @@ export default function HajjPackagesPage() {
           <PackageGrid type="Hajj" />
         </div>
       </section>
+      <HajjPosterBanner
+        eyebrow="Official Posters"
+        title="See the official Hajj package posters"
+        description="Review the printed posters for full pricing tiers and itinerary details before you book."
+      />
       <SacredGallery
         eyebrow="Sacred Journey"
         title="Visuals from the Haramain"

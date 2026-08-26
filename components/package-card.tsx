@@ -21,8 +21,8 @@ function getPackageImage(pkg: TravelPackage) {
   }
 
   if (pkg.theme === "Umrah") {
-    if (pkg.id.includes("14")) return siteConfig.assets.media.makkahImages[3];
-    if (pkg.id.includes("12")) return siteConfig.assets.media.madinahImages[3];
+    if (pkg.id.includes("package-2")) return siteConfig.assets.media.madinahImages[3];
+    if (pkg.id.includes("package-3")) return siteConfig.assets.media.makkahImages[3];
     return siteConfig.assets.media.makkahImages[1];
   }
 
