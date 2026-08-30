@@ -26,7 +26,7 @@ const POSTERS = [
   },
 ];
 
-const AUTO_INTERVAL = 3000;
+const AUTO_INTERVAL = 1000;
 
 export function UmrahPopup() {
   const [open, setOpen] = useState(false);
