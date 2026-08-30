@@ -23,6 +23,15 @@ export function Footer() {
                 <MessageCircle className="h-4 w-4" />
                 Chat on WhatsApp
               </a>
+              <a
+                href={siteConfig.social.whatsappChannel}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-primary-foreground hover:bg-white/20 sm:w-auto"
+              >
+                <MessageCircle className="h-4 w-4" />
+                Join WhatsApp Channel
+              </a>
             </div>
             <div className="mt-6 flex flex-wrap gap-3">
               <a href={siteConfig.social.facebook} target="_blank" rel="noreferrer" aria-label="Facebook" className="rounded-full border border-white/10 bg-white/5 p-3 hover:bg-white/10">
