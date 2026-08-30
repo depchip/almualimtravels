@@ -22,16 +22,16 @@ const slides: PromoSlide[] = [
     label: "Umrah Package",
   },
   {
-    src: siteConfig.assets.media.hajjTrainingPosters[0],
-    alt: "Hajj & Umrah Training Program - Jame Masjid Madina, Karachi",
-    href: "/training-resources",
-    label: "Hajj Training",
+    src: siteConfig.assets.media.hajjPackagePosters[0],
+    alt: "Hajj Special Package - 26 Days with Al Shohda Hotel, starting from Rs. 1,790,000",
+    href: "/hajj-packages",
+    label: "Hajj Package",
   },
   {
-    src: siteConfig.assets.media.hajjTrainingPosters[1],
-    alt: "Hajj & Umrah Training Program - Mohammadi Masjid, Karachi",
-    href: "/training-resources",
-    label: "Hajj Training",
+    src: siteConfig.assets.media.hajjPackagePosters[1],
+    alt: "Hajj Fixed Aziziya Package, starting from Rs. 1,610,000",
+    href: "/hajj-packages",
+    label: "Hajj Package",
   },
 ];
 
@@ -64,19 +64,19 @@ export function PromoPopup() {
       >
         <button
           onClick={close}
-          className="absolute -right-2 -top-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white text-gray-700 shadow-xl transition-colors hover:bg-gray-100"
+          className="absolute right-1 top-1 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-700 shadow-xl transition-colors hover:bg-gray-100 md:-right-2 md:-top-2 md:h-11 md:w-11"
           aria-label="Close"
         >
           <X size={22} />
         </button>
 
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-4">
           {slides.map((poster, i) => (
             <Link
               key={i}
               href={poster.href}
               onClick={close}
-              className="group block overflow-hidden rounded-2xl bg-white shadow-2xl transition-transform hover:scale-[1.02]"
+              className="group block overflow-hidden rounded-xl bg-white shadow-2xl transition-transform hover:scale-[1.02] sm:rounded-2xl"
             >
               <div className="overflow-hidden">
                 <Image
@@ -84,12 +84,12 @@ export function PromoPopup() {
                   alt={poster.alt}
                   width={600}
                   height={750}
-                  className="block h-auto w-full"
+                  className="block h-auto max-h-[40vh] w-full object-contain sm:max-h-none"
                   priority
                 />
               </div>
-              <div className="px-3 py-2.5 text-center">
-                <span className="text-sm font-semibold text-gray-700">{poster.label}</span>
+              <div className="px-3 py-2 text-center sm:py-2.5">
+                <span className="text-xs font-semibold text-gray-700 sm:text-sm">{poster.label}</span>
               </div>
             </Link>
           ))}
