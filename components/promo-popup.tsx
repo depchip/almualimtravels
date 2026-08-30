@@ -16,12 +16,6 @@ type PromoSlide = {
 
 const slides: PromoSlide[] = [
   {
-    src: "/UmrahPkgSept.jpeg",
-    alt: "September 2026 Umrah Package - 20 Days starting from Rs. 237,500",
-    href: "/umrah-packages",
-    label: "Umrah Package",
-  },
-  {
     src: siteConfig.assets.media.hajjPackagePosters[0],
     alt: "Hajj Special Package - 26 Days with Al Shohda Hotel, starting from Rs. 1,790,000",
     href: "/hajj-packages",
@@ -32,6 +26,12 @@ const slides: PromoSlide[] = [
     alt: "Hajj Fixed Aziziya Package, starting from Rs. 1,610,000",
     href: "/hajj-packages",
     label: "Hajj Package",
+  },
+  {
+    src: "/UmrahPkgSept.jpeg",
+    alt: "September 2026 Umrah Package - 20 Days starting from Rs. 237,500",
+    href: "/umrah-packages",
+    label: "Umrah Package",
   },
 ];
 
