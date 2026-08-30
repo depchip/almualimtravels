@@ -91,29 +91,44 @@ export function UmrahPopup() {
   const poster = POSTERS[current];
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm" onClick={close}>
+    <div
+      className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 backdrop-blur-sm"
+      onClick={close}
+    >
       <div
-        className="relative flex w-full max-w-lg items-center gap-3"
+        className="relative mx-auto w-[min(420px,85vw)]"
         onClick={(e) => e.stopPropagation()}
       >
+        {/* Close button */}
         <button
-          onClick={prev}
-          className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white/90 text-gray-700 shadow-lg transition-all hover:bg-white hover:scale-110"
-          aria-label="Previous poster"
+          onClick={close}
+          className="absolute -right-2 -top-2 z-20 flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-700 shadow-lg transition-colors hover:bg-gray-100"
+          aria-label="Close popup"
         >
-          <ChevronLeft size={28} strokeWidth={2.5} />
+          <X size={20} />
         </button>
 
-        <div className="relative min-w-0 flex-1">
-          <button
-            onClick={close}
-            className="absolute -right-3 -top-3 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-700 shadow-lg transition-colors hover:bg-gray-100"
-            aria-label="Close popup"
-          >
-            <X size={20} />
-          </button>
+        {/* Left arrow - positioned outside poster */}
+        <button
+          onClick={prev}
+          className="absolute -left-16 top-1/2 z-20 hidden h-14 w-14 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-gray-700 shadow-lg transition-all hover:scale-110 hover:bg-white md:flex"
+          aria-label="Previous poster"
+        >
+          <ChevronLeft size={30} strokeWidth={2.5} />
+        </button>
 
-          <div className="overflow-hidden rounded-2xl bg-white shadow-2xl">
+        {/* Right arrow - positioned outside poster */}
+        <button
+          onClick={next}
+          className="absolute -right-16 top-1/2 z-20 hidden h-14 w-14 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-gray-700 shadow-lg transition-all hover:scale-110 hover:bg-white md:flex"
+          aria-label="Next poster"
+        >
+          <ChevronRight size={30} strokeWidth={2.5} />
+        </button>
+
+        {/* Poster card */}
+        <div className="overflow-hidden rounded-2xl bg-white shadow-2xl">
+          <div className="max-h-[75vh] overflow-y-auto">
             <Link href={poster.href} onClick={close}>
               <Image
                 key={poster.src}
@@ -125,29 +140,40 @@ export function UmrahPopup() {
                 priority
               />
             </Link>
+          </div>
 
-            <div className="flex items-center justify-center gap-2.5 py-3">
-              {POSTERS.map((_, i) => (
+          {/* Bottom bar: mobile arrows + dots */}
+          <div className="flex items-center justify-between border-t border-gray-100 px-4 py-3">
+            <button
+              onClick={prev}
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 text-gray-600 transition-colors hover:bg-gray-200 md:invisible"
+              aria-label="Previous poster"
+            >
+              <ChevronLeft size={22} strokeWidth={2.5} />
+            </button>
+
+            <div className="flex items-center gap-2.5">
+              {POSTERS.map((p, i) => (
                 <button
                   key={i}
                   onClick={() => goTo(i)}
                   className={`h-2.5 rounded-full transition-all ${
                     i === current ? "w-7 bg-primary" : "w-2.5 bg-gray-300 hover:bg-gray-400"
                   }`}
-                  aria-label={`Go to poster ${i + 1}`}
+                  aria-label={`${p.label} (${i + 1} of ${POSTERS.length})`}
                 />
               ))}
             </div>
+
+            <button
+              onClick={next}
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 text-gray-600 transition-colors hover:bg-gray-200 md:invisible"
+              aria-label="Next poster"
+            >
+              <ChevronRight size={22} strokeWidth={2.5} />
+            </button>
           </div>
         </div>
-
-        <button
-          onClick={next}
-          className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white/90 text-gray-700 shadow-lg transition-all hover:bg-white hover:scale-110"
-          aria-label="Next poster"
-        >
-          <ChevronRight size={28} strokeWidth={2.5} />
-        </button>
       </div>
     </div>
   );
