@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import { X } from "lucide-react";
 
 import { siteConfig } from "@/lib/site";
 
@@ -11,6 +11,7 @@ type PromoSlide = {
   src: string;
   alt: string;
   href: string;
+  label: string;
 };
 
 const slides: PromoSlide[] = [
@@ -18,93 +19,81 @@ const slides: PromoSlide[] = [
     src: "/UmrahPkgSept.jpeg",
     alt: "September 2026 Umrah Package - 20 Days starting from Rs. 237,500",
     href: "/umrah-packages",
+    label: "Umrah Package",
   },
   {
-    src: siteConfig.assets.media.hajjPackagePosters[0],
-    alt: "Hajj Special Package - 26 Days with Al Shohda Hotel, starting from Rs. 1,790,000",
-    href: "/packages/hajj-special-package-26-days",
+    src: siteConfig.assets.media.hajjTrainingPosters[0],
+    alt: "Hajj & Umrah Training Program - Jame Masjid Madina, Karachi",
+    href: "/training-resources",
+    label: "Hajj Training",
   },
   {
-    src: siteConfig.assets.media.hajjPackagePosters[1],
-    alt: "Hajj Fixed Aziziya Package, starting from Rs. 1,610,000",
-    href: "/packages/hajj-fixed-aziziya",
+    src: siteConfig.assets.media.hajjTrainingPosters[1],
+    alt: "Hajj & Umrah Training Program - Mohammadi Masjid, Karachi",
+    href: "/training-resources",
+    label: "Hajj Training",
   },
 ];
 
 export function PromoPopup() {
   const [open, setOpen] = useState(false);
-  const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    const dismissed = sessionStorage.getItem("promo-popup-dismissed");
-    if (!dismissed) {
-      const timer = setTimeout(() => setOpen(true), 1500);
-      return () => clearTimeout(timer);
-    }
+    try {
+      if (sessionStorage.getItem("promo-popup-dismissed")) return;
+    } catch {}
+    const t = setTimeout(() => setOpen(true), 1500);
+    return () => clearTimeout(t);
   }, []);
 
   function close() {
     setOpen(false);
-    sessionStorage.setItem("promo-popup-dismissed", "1");
-  }
-
-  function go(delta: number) {
-    setIndex((current) => (current + delta + slides.length) % slides.length);
+    try { sessionStorage.setItem("promo-popup-dismissed", "1"); } catch {}
   }
 
   if (!open) return null;
 
-  const slide = slides[index];
-
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 p-4" onClick={close}>
+    <div
+      className="fixed inset-0 z-[100] flex items-center justify-center overflow-y-auto bg-black/70 p-4 backdrop-blur-sm"
+      onClick={close}
+    >
       <div
-        className="relative max-h-[90vh] w-full max-w-lg overflow-hidden rounded-2xl shadow-2xl"
+        className="relative w-full max-w-5xl"
         onClick={(e) => e.stopPropagation()}
       >
         <button
           onClick={close}
-          className="absolute right-3 top-3 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-black/50 text-white backdrop-blur-sm transition-colors hover:bg-black/70"
-          aria-label="Close popup"
+          className="absolute -right-2 -top-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white text-gray-700 shadow-xl transition-colors hover:bg-gray-100"
+          aria-label="Close"
         >
-          <X size={20} />
+          <X size={22} />
         </button>
 
-        {slides.length > 1 ? (
-          <>
-            <button
-              onClick={() => go(-1)}
-              className="absolute left-3 top-1/2 z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-black/50 text-white backdrop-blur-sm transition-colors hover:bg-black/70"
-              aria-label="Previous poster"
+        <div className="grid gap-4 md:grid-cols-3">
+          {slides.map((poster, i) => (
+            <Link
+              key={i}
+              href={poster.href}
+              onClick={close}
+              className="group block overflow-hidden rounded-2xl bg-white shadow-2xl transition-transform hover:scale-[1.02]"
             >
-              <ChevronLeft size={20} />
-            </button>
-            <button
-              onClick={() => go(1)}
-              className="absolute right-3 top-1/2 z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-black/50 text-white backdrop-blur-sm transition-colors hover:bg-black/70"
-              aria-label="Next poster"
-            >
-              <ChevronRight size={20} />
-            </button>
-          </>
-        ) : null}
-
-        <Link href={slide.href} onClick={close}>
-          <Image src={slide.src} alt={slide.alt} width={800} height={1000} className="h-auto w-full" priority />
-        </Link>
-
-        {slides.length > 1 ? (
-          <div className="absolute bottom-3 left-1/2 z-10 flex -translate-x-1/2 gap-2">
-            {slides.map((s, i) => (
-              <button
-                key={s.href}
-                onClick={() => setIndex(i)}
-                className={`h-2 w-2 rounded-full transition-colors ${i === index ? "bg-white" : "bg-white/40"}`}
-                aria-label={`Go to poster ${i + 1}`}
-              />
-            ))}
-          </div>
-        ) : null}
+              <div className="overflow-hidden">
+                <Image
+                  src={poster.src}
+                  alt={poster.alt}
+                  width={600}
+                  height={750}
+                  className="block h-auto w-full"
+                  priority
+                />
+              </div>
+              <div className="px-3 py-2.5 text-center">
+                <span className="text-sm font-semibold text-gray-700">{poster.label}</span>
+              </div>
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );
