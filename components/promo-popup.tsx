@@ -70,29 +70,53 @@ export function PromoPopup() {
           <X size={22} />
         </button>
 
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-4">
-          {slides.map((poster, i) => (
-            <Link
-              key={i}
-              href={poster.href}
-              onClick={close}
-              className="group block overflow-hidden rounded-xl bg-white shadow-2xl transition-transform hover:scale-[1.02] sm:rounded-2xl"
-            >
-              <div className="overflow-hidden">
-                <Image
-                  src={poster.src}
-                  alt={poster.alt}
-                  width={600}
-                  height={750}
-                  className="block h-auto max-h-[40vh] w-full object-contain sm:max-h-none"
-                  priority
-                />
-              </div>
-              <div className="px-3 py-2 text-center sm:py-2.5">
-                <span className="text-xs font-semibold text-gray-700 sm:text-sm">{poster.label}</span>
-              </div>
-            </Link>
-          ))}
+        <div className="flex flex-col gap-3 sm:gap-4">
+          {/* Umrah poster — full width on top */}
+          <Link
+            href={slides[0].href}
+            onClick={close}
+            className="group block overflow-hidden rounded-xl bg-white shadow-2xl transition-transform hover:scale-[1.01] sm:rounded-2xl"
+          >
+            <div className="overflow-hidden">
+              <Image
+                src={slides[0].src}
+                alt={slides[0].alt}
+                width={1200}
+                height={750}
+                className="block h-auto max-h-[35vh] w-full object-contain sm:max-h-[45vh]"
+                priority
+              />
+            </div>
+            <div className="px-3 py-2 text-center sm:py-2.5">
+              <span className="text-xs font-semibold text-gray-700 sm:text-sm">{slides[0].label}</span>
+            </div>
+          </Link>
+
+          {/* Two Hajj posters side by side */}
+          <div className="grid grid-cols-2 gap-3 sm:gap-4">
+            {slides.slice(1).map((poster, i) => (
+              <Link
+                key={i}
+                href={poster.href}
+                onClick={close}
+                className="group block overflow-hidden rounded-xl bg-white shadow-2xl transition-transform hover:scale-[1.02] sm:rounded-2xl"
+              >
+                <div className="overflow-hidden">
+                  <Image
+                    src={poster.src}
+                    alt={poster.alt}
+                    width={600}
+                    height={750}
+                    className="block h-auto w-full"
+                    priority
+                  />
+                </div>
+                <div className="px-3 py-2 text-center sm:py-2.5">
+                  <span className="text-xs font-semibold text-gray-700 sm:text-sm">{poster.label}</span>
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </div>
