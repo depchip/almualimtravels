@@ -42,7 +42,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="section-shell section-space">
+      <section className="section-shell -mt-4 pb-16">
         <div className="mesh-panel gold-ring rounded-[2rem] p-8">
           <SectionHeading
             eyebrow="Scholarly Partner"
