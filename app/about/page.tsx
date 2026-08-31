@@ -5,7 +5,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata = buildMetadata({
   title: "About Us",
   description:
-    "Learn about AlMuallim Travels and Tours, its mission, and the scholar-led guidance of Mufti Furqan Mamji.",
+    "Learn about AlMuallim Travels and Tours, its mission, and the scholar-led guidance of Mufti Furqan Mamji and Maulana Dr. Muhammad Nisar.",
   path: "/about",
 });
 
@@ -38,6 +38,20 @@ export default function AboutPage() {
           <div className="mt-6 space-y-4 text-sm leading-7 text-muted-foreground">
             <p>His involvement gives travelers a strong sense of trust and a source of practical answers throughout the planning process.</p>
             <p>The result is a service that is not only about transportation and hotels, but about preparing for the journey with sincerity and understanding.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-shell section-space">
+        <div className="mesh-panel gold-ring rounded-[2rem] p-8">
+          <SectionHeading
+            eyebrow="Scholarly Partner"
+            title="Maulana Dr. Muhammad Nisar"
+            description="Islamic scholar, educator, researcher, and academic administrator dedicated to guiding pilgrims with knowledge and sincerity."
+          />
+          <div className="mt-6 space-y-4 text-sm leading-7 text-muted-foreground">
+            <p>Maulana Dr. Muhammad Nisar is a respected Islamic scholar with a deep focus on the Qur&apos;an, Hadith, Seerah, and character development. He serves in an educational leadership role at Hidayah Academy, where he contributes to the academic and moral development of students.</p>
+            <p>He is currently pursuing PhD-level research in Islamic Studies and remains actively engaged in guiding and educating pilgrims during Hajj and Umrah. His work reflects a blend of Islamic scholarship, research, education, training, and community service.</p>
           </div>
         </div>
       </section>
