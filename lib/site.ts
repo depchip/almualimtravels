@@ -7,8 +7,9 @@ export const siteConfig = {
   address: "48-B, RJ Mall, Main Rashid Minhas Road, Karachi, Pakistan",
   googleRating: {
     score: 5.0,
-    totalReviews: 532,
+    totalReviews: 535,
     label: "Google Reviews",
+    url: "https://www.google.com/maps/place/AlMuallim+Travels/@24.9025967,67.1146403,17z/data=!3m1!5s0x3eb339217cd74d41:0x5072457459ee92cb!4m8!3m7!1s0x3eb33d416aff08b1:0x8672062ac7450800!8m2!3d24.9025967!4d67.1146403!9m1!1b1!16s%2Fg%2F11wwrsd_qb",
   },
   social: {
     facebook: "https://www.facebook.com/Almuallimtravels/",

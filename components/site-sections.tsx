@@ -95,7 +95,7 @@ const serviceCards = [
 const differentiators = [
   "Scholar-led Umrah guidance through Mufti Furqan Mamji",
   "Preparation before departure, not just package selling",
-  "Strong public trust with 5.0 Google rating and 532 reviews",
+  "Strong public trust with 5.0 Google rating and 535 reviews",
   "Travel support designed for families, first-time pilgrims, and groups",
 ];
 
@@ -337,7 +337,12 @@ export function GoogleReviewsSection() {
           title="Real trust, backed by public reviews"
           description="People trust AlMuallim because they can see the experience others had before them."
         />
-        <div className="rounded-[2rem] border border-primary/10 bg-white/80 px-6 py-5 shadow-sm">
+        <a
+          href={siteConfig.googleRating.url}
+          target="_blank"
+          rel="noreferrer"
+          className="block rounded-[2rem] border border-primary/10 bg-white/80 px-6 py-5 shadow-sm transition-shadow hover:shadow-md"
+        >
           <p className="font-display text-5xl font-semibold text-foreground">{siteConfig.googleRating.score.toFixed(1)}</p>
           <div className="mt-2 flex gap-1">
             {Array.from({ length: 5 }).map((_, index) => (
@@ -345,7 +350,7 @@ export function GoogleReviewsSection() {
             ))}
           </div>
           <p className="mt-3 text-sm text-muted-foreground">{siteConfig.googleRating.totalReviews} Google Reviews</p>
-        </div>
+        </a>
       </div>
       <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {testimonials.slice(0, 3).map((review, index) => (
