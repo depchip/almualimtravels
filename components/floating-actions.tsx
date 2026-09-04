@@ -11,7 +11,7 @@ export function FloatingActions() {
         href={siteConfig.social.whatsapp}
         target="_blank"
         rel="noreferrer"
-        className="fixed bottom-24 right-4 z-40 inline-flex h-16 w-16 items-center justify-center rounded-full bg-primary text-white shadow-[0_20px_50px_rgba(37,99,235,0.35)] ring-4 ring-white/85 transition-transform hover:scale-105 md:bottom-5 md:right-5"
+        className="fixed bottom-24 right-4 z-40 inline-flex h-16 w-16 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_20px_50px_rgba(37,211,102,0.35)] ring-4 ring-white/85 transition-transform hover:scale-105 md:bottom-5 md:right-5"
         aria-label="Chat on WhatsApp"
       >
         <MessageCircle className="h-7 w-7 stroke-[2.4]" />
