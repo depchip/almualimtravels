@@ -21,7 +21,7 @@ export default function ContactPage() {
         title="Reach out for package details, training, or custom travel planning"
         description="Send your inquiry and we will be ready to help you with Hajj, Umrah, Pakistan tours, international tours, or training sessions."
       />
-      <section className="section-shell section-space grid gap-8 lg:grid-cols-[0.9fr,1.1fr]">
+      <section className="section-shell section-space grid gap-8 lg:grid-cols-[0.9fr,1.1fr] lg:items-start">
         <div className="space-y-6">
           <SectionHeading
             eyebrow="Get in Touch"
@@ -107,7 +107,9 @@ export default function ContactPage() {
             />
           </div>
         </div>
-        <InquiryForm />
+        <div className="lg:sticky lg:top-24 lg:self-start">
+          <InquiryForm />
+        </div>
       </section>
     </>
   );
