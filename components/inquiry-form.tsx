@@ -17,6 +17,8 @@ const inquirySchema = z.object({
   phone: z.string().min(7, "Please enter a valid phone number."),
   email: z.string().email("Please enter a valid email address."),
   serviceType: z.enum(["Hajj", "Umrah", "Tour", "Training"]),
+  days: z.string().optional(),
+  departureCity: z.string().optional(),
   message: z.string().min(10, "Please share a few details about your inquiry."),
 });
 
@@ -46,6 +48,8 @@ export function InquiryForm() {
       phone: values.phone,
       email: values.email,
       serviceType: values.serviceType,
+      days: values.days || "",
+      departureCity: values.departureCity || "",
       message: values.message,
     });
 
@@ -81,6 +85,12 @@ export function InquiryForm() {
             <option value="Training">Training</option>
           </Select>
           {errors.serviceType ? <p className="mt-2 text-sm text-red-600">{errors.serviceType.message}</p> : null}
+        </div>
+        <div>
+          <Input type="number" min={1} placeholder="Number of days" {...register("days")} />
+        </div>
+        <div>
+          <Input placeholder="Departure city" {...register("departureCity")} />
         </div>
       </div>
       <div className="mt-5">
