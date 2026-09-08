@@ -20,14 +20,24 @@ const bookingSchema = z.object({
   category: z.string().min(1, "Please select a category."),
   email: z.string().email("Please enter a valid email.").or(z.literal("")),
   phone: z.string().min(7, "Please enter a valid phone number."),
+  departureCity: z.string().min(2, "Please enter your departure city."),
   service: z.string().min(1, "Please select a service."),
   message: z.string().optional(),
 });
 
 type BookingValues = z.infer<typeof bookingSchema>;
 
+function matchCategory(pkg: TravelPackage): string {
+  const title = pkg.title.toLowerCase();
+  const match = pkg.bookingCategories.find(
+    (cat) => title.includes(cat.toLowerCase()) || cat.toLowerCase().startsWith(title.split(" ")[0]),
+  );
+  return match ?? pkg.bookingCategories[0];
+}
+
 export function BookingForm({ pkg }: { pkg: TravelPackage }) {
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
+  const defaultCategory = matchCategory(pkg);
 
   const {
     register,
@@ -37,7 +47,7 @@ export function BookingForm({ pkg }: { pkg: TravelPackage }) {
   } = useForm<BookingValues>({
     resolver: zodResolver(bookingSchema),
     defaultValues: {
-      category: pkg.bookingCategories[0],
+      category: defaultCategory,
       service: pkg.type,
       message: `I want to book the ${pkg.title} (${pkg.duration}).`,
       email: "",
@@ -58,6 +68,7 @@ export function BookingForm({ pkg }: { pkg: TravelPackage }) {
       category: values.category,
       email: values.email,
       phone: values.phone,
+      departureCity: values.departureCity,
       service: values.service,
       message: values.message ?? "",
     });
@@ -69,7 +80,7 @@ export function BookingForm({ pkg }: { pkg: TravelPackage }) {
 
     setStatus("success");
     reset({
-      category: pkg.bookingCategories[0],
+      category: defaultCategory,
       service: pkg.type,
       message: `I want to book the ${pkg.title} (${pkg.duration}).`,
       email: "",
@@ -77,6 +88,7 @@ export function BookingForm({ pkg }: { pkg: TravelPackage }) {
       fatherName: "",
       cnic: "",
       phone: "",
+      departureCity: "",
     });
   };
 
@@ -119,6 +131,11 @@ export function BookingForm({ pkg }: { pkg: TravelPackage }) {
           <label className="mb-2 block text-sm font-medium text-foreground">Phone (required)</label>
           <Input placeholder="Enter phone number" {...register("phone")} />
           {errors.phone ? <p className="mt-2 text-sm text-red-600">{errors.phone.message}</p> : null}
+        </div>
+        <div>
+          <label className="mb-2 block text-sm font-medium text-foreground">Departure City (required)</label>
+          <Input placeholder="e.g. Karachi, Lahore" {...register("departureCity")} />
+          {errors.departureCity ? <p className="mt-2 text-sm text-red-600">{errors.departureCity.message}</p> : null}
         </div>
         <div className="sm:col-span-2">
           <label className="mb-2 block text-sm font-medium text-foreground">Service (required)</label>
