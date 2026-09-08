@@ -131,7 +131,7 @@
       "Airport transfers",
       "Preparation resources before departure"
     ],
-    "bookingCategories": ["Economic", "Standard", "Premium"]
+    "bookingCategories": ["Economic", "Executive", "Premium"]
   },
   {
     "id": "umrah-executive-20-nights",
@@ -158,7 +158,7 @@
       "Travel planning assistance",
       "Suitable for families and small groups"
     ],
-    "bookingCategories": ["Economic", "Standard", "Premium"]
+    "bookingCategories": ["Economic", "Executive", "Premium"]
   },
   {
     "id": "umrah-economy-20-nights",
@@ -185,7 +185,7 @@
       "Airport and hotel transfers",
       "Compact and efficient itinerary"
     ],
-    "bookingCategories": ["Economic", "Standard"]
+    "bookingCategories": ["Economic", "Executive"]
   },
   {
     "id": "domestic-hunza-family",
@@ -212,7 +212,7 @@
       "Sightseeing support",
       "Trip coordination"
     ],
-    "bookingCategories": ["Economic", "Standard", "Premium"]
+    "bookingCategories": ["Economic", "Executive", "Premium"]
   },
   {
     "id": "domestic-skardu-adventure",
@@ -239,7 +239,7 @@
       "Basic sightseeing coverage",
       "Trip planning support"
     ],
-    "bookingCategories": ["Standard", "Premium"]
+    "bookingCategories": ["Executive", "Premium"]
   },
   {
     "id": "international-turkey-classic",
@@ -266,7 +266,7 @@
       "Sightseeing support",
       "Travel assistance"
     ],
-    "bookingCategories": ["Economic", "Standard", "Premium"]
+    "bookingCategories": ["Economic", "Executive", "Premium"]
   },
   {
     "id": "international-dubai-delight",
@@ -293,6 +293,6 @@
       "City tour coordination",
       "Pre-travel guidance"
     ],
-    "bookingCategories": ["Standard", "Premium"]
+    "bookingCategories": ["Executive", "Premium"]
   }
 ]
