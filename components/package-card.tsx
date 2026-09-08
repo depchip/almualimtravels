@@ -30,7 +30,7 @@ function getPackageImage(pkg: TravelPackage) {
 }
 
 export function PackageCard({ pkg }: { pkg: TravelPackage }) {
-  const packageHref = `/packages/${pkg.id}`;
+  const packageHref = `/packages/${pkg.id}#book-now`;
   const packageImage = getPackageImage(pkg);
   const isSacredPackage = pkg.theme === "Hajj" || pkg.theme === "Umrah";
 
