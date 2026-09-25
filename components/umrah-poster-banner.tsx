@@ -13,8 +13,8 @@ type UmrahPosterBannerProps = {
 
 export function UmrahPosterBanner({
   eyebrow = "Upcoming Departure",
-  title = "September 2026 Umrah Package",
-  description = "20-day Umrah journey with Muallim guidance, departing 16 September 2026 via FlyJinnah. Multiple packages available.",
+  title = "October 2026 Umrah Package",
+  description = "20-day Umrah journey with Muallim guidance, departing 18 October 2026 via FlyJinnah. Multiple packages available.",
   href = "/umrah-packages",
 }: UmrahPosterBannerProps) {
   return (
@@ -24,8 +24,8 @@ export function UmrahPosterBanner({
         <AnimatedSection>
           <Link href={href} className="group block overflow-hidden rounded-2xl shadow-lg transition-shadow hover:shadow-2xl">
             <Image
-              src="/UmrahPkgSept.jpeg"
-              alt="September 2026 Umrah Package - 20 Days starting from Rs. 237,500"
+              src="/UmrahPkgOct.jpeg"
+              alt="October 2026 Umrah Package - 20 Days starting from Rs. 230,000"
               width={800}
               height={1000}
               className="h-auto w-full transition-transform duration-300 group-hover:scale-[1.02]"
