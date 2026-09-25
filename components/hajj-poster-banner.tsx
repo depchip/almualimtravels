@@ -13,7 +13,7 @@ type HajjPosterBannerProps = {
 
 export function HajjPosterBanner({
   eyebrow = "Upcoming Departure",
-  title = "Hajj 2026 Packages",
+  title = "Hajj 2027 Packages",
   description = "Choose between the Special 26-day Hajj Package and the Fixed Aziziya Package, both guided by Mufti Furqan Ahmed Majji.",
 }: HajjPosterBannerProps) {
   const hajjPackages = getPackagesByType("Hajj").filter((pkg) => pkg.posterImage);
