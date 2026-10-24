@@ -28,8 +28,8 @@ const slides: PromoSlide[] = [
     label: "Hajj Package",
   },
   {
-    src: "/UmrahPkgOct.jpeg",
-    alt: "October 2026 Umrah Package - 20 Days starting from Rs. 230,000",
+    src: "/UmrahPkgNov.jpeg",
+    alt: "November 2026 Umrah Package - 20 Days starting from Rs. 267,500",
     href: "/umrah-packages",
     label: "Umrah Package",
   },

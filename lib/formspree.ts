@@ -1,4 +1,4 @@
-export const FORMSPREE_ENDPOINT = "https://formspree.io/f/xojvozwn";
+export const FORMSPREE_ENDPOINT = "https://formspree.io/f/mdeeande";
 
 type FormspreePayload = Record<string, string>;
 
