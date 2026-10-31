@@ -71,3 +71,137 @@ a {
     background-attachment: scroll;
   }
 }
+
+/* Blog post content: shared by the admin editor and the public post page. */
+.post-content > :first-child {
+  margin-top: 0;
+}
+
+.post-content p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+  color: #94a3b8;
+}
+
+.post-content img {
+  @apply mx-auto rounded-2xl;
+}
+
+.post-content img.ProseMirror-selectednode {
+  outline: 3px solid hsl(var(--primary));
+  outline-offset: 2px;
+}
+
+.post-content div[data-youtube-video] {
+  @apply my-8 overflow-hidden rounded-2xl bg-black;
+}
+
+.post-content div[data-youtube-video] iframe {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
+.post-content div[data-youtube-video].ProseMirror-selectednode {
+  outline: 3px solid hsl(var(--primary));
+}
+
+.post-content table {
+  @apply my-8 w-full border-collapse overflow-hidden rounded-xl text-base;
+  display: block;
+  overflow-x: auto;
+}
+
+.post-content th,
+.post-content td {
+  @apply border border-slate-200 px-3 py-2 align-top;
+  min-width: 6rem;
+}
+
+.post-content th {
+  @apply bg-secondary/60 text-left font-semibold;
+}
+
+.post-content td > p,
+.post-content th > p {
+  margin: 0;
+}
+
+.post-content .selectedCell {
+  background: hsl(var(--primary) / 0.08);
+}
+
+.post-content ul[data-type="taskList"] {
+  @apply list-none pl-0;
+}
+
+.post-content ul[data-type="taskList"] li {
+  @apply flex items-start gap-3 pl-0;
+}
+
+.post-content ul[data-type="taskList"] li > label {
+  @apply mt-1.5 flex-none;
+}
+
+.post-content ul[data-type="taskList"] li > label input {
+  @apply h-4 w-4 accent-primary;
+}
+
+.post-content ul[data-type="taskList"] li > div {
+  @apply flex-1;
+}
+
+.post-content ul[data-type="taskList"] li > div > p {
+  margin: 0;
+}
+
+.post-content ul[data-type="taskList"] li[data-checked="true"] > div {
+  @apply text-slate-400 line-through;
+}
+
+.post-content mark {
+  @apply rounded px-0.5 text-inherit;
+}
+
+.post-content pre {
+  @apply rounded-2xl bg-slate-900 text-slate-100;
+}
+
+.post-content pre code {
+  @apply bg-transparent p-0 text-sm;
+}
+
+/* Code highlighting (lowlight / highlight.js classes) */
+.post-content .hljs-comment,
+.post-content .hljs-quote {
+  color: #94a3b8;
+  font-style: italic;
+}
+.post-content .hljs-keyword,
+.post-content .hljs-selector-tag,
+.post-content .hljs-built_in {
+  color: #c4b5fd;
+}
+.post-content .hljs-string,
+.post-content .hljs-attr,
+.post-content .hljs-template-variable {
+  color: #86efac;
+}
+.post-content .hljs-number,
+.post-content .hljs-literal,
+.post-content .hljs-variable {
+  color: #fdba74;
+}
+.post-content .hljs-title,
+.post-content .hljs-section,
+.post-content .hljs-function {
+  color: #93c5fd;
+}
+.post-content .hljs-tag,
+.post-content .hljs-name {
+  color: #f9a8d4;
+}

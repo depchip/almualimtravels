@@ -1,3 +1,4 @@
+import { LatestPosts } from "@/components/blog/latest-posts";
 import { HeroSection } from "@/components/hero-section";
 import {
   ClientVideoReviewsSection,
@@ -30,6 +31,7 @@ export default function HomePage() {
       <WhyChooseUsSection />
       <GuidedUmrahHighlight />
       <HomeTrainingSection />
+      <LatestPosts />
       <GoogleReviewsSection />
       <ClientVideoReviewsSection />
       <TestimonialsSection />

@@ -14,6 +14,7 @@ const primaryLinks = [
   { href: "/domestic-tours", label: "Domestic Tours" },
   { href: "/international-tours", label: "International Tours" },
   { href: "/training-resources", label: "Training" },
+  { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
 ];
 

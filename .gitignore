@@ -4,3 +4,15 @@ npm-debug.log*
 dist
 .DS_Store
 out
+
+# env files (Firebase/Cloudinary config)
+.env*.local
+.env
+
+# Firebase CLI
+.firebase/
+firebase-debug.log
+firestore-debug.log
+
+# TypeScript incremental build cache
+*.tsbuildinfo
