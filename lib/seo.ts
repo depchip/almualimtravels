@@ -7,11 +7,24 @@ type MetaInput = {
   title: string;
   description: string;
   path?: string;
+  image?: { url: string; alt: string };
+  type?: "website" | "article";
+  publishedTime?: string;
+  modifiedTime?: string;
 };
 
-export function buildMetadata({ title, description, path = "/" }: MetaInput): Metadata {
+export function buildMetadata({
+  title,
+  description,
+  path = "/",
+  image,
+  type = "website",
+  publishedTime,
+  modifiedTime,
+}: MetaInput): Metadata {
   const fullTitle = `${title} | AlMuallim Travels and Tours`;
   const url = `${baseUrl}${path}`;
+  const shareImage = image ?? { url: `${baseUrl}${siteConfig.assets.branding.orgLogo}`, alt: "AlMuallim Travels and Tours" };
 
   return {
     title: fullTitle,
@@ -25,13 +38,14 @@ export function buildMetadata({ title, description, path = "/" }: MetaInput): Me
       url,
       siteName: "AlMuallim Travels and Tours",
       locale: "en_US",
-      type: "website",
+      type,
+      ...(type === "article" ? { publishedTime, modifiedTime } : {}),
       images: [
         {
-          url: `${baseUrl}${siteConfig.assets.branding.orgLogo}`,
+          url: shareImage.url,
           width: 1200,
           height: 630,
-          alt: "AlMuallim Travels and Tours",
+          alt: shareImage.alt,
         },
       ],
     },
@@ -39,7 +53,7 @@ export function buildMetadata({ title, description, path = "/" }: MetaInput): Me
       card: "summary_large_image",
       title: fullTitle,
       description,
-      images: [`${baseUrl}${siteConfig.assets.branding.orgLogo}`],
+      images: [shareImage.url],
     },
     icons: {
       icon: siteConfig.assets.branding.favicon,
@@ -79,3 +93,47 @@ export const personSchema = {
   description:
     "Mufti Furqan Mamji personally leads Umrah groups, offers training sessions, and provides educational guidance for pilgrims.",
 };
+
+type BlogPostingInput = {
+  title: string;
+  description: string;
+  path: string;
+  image?: string;
+  publishedTime: string;
+  modifiedTime: string;
+  authorName: string;
+  youtubeIds: string[];
+};
+
+export function buildBlogPostingSchema(post: BlogPostingInput) {
+  const url = `${baseUrl}${post.path}`;
+
+  return [
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      headline: post.title,
+      description: post.description,
+      url,
+      mainEntityOfPage: url,
+      ...(post.image ? { image: [post.image] } : {}),
+      datePublished: post.publishedTime,
+      dateModified: post.modifiedTime,
+      author: { "@type": "Organization", name: post.authorName || siteConfig.name, url: baseUrl },
+      publisher: {
+        "@type": "Organization",
+        name: siteConfig.name,
+        logo: { "@type": "ImageObject", url: `${baseUrl}${siteConfig.assets.branding.orgLogo}` },
+      },
+    },
+    ...post.youtubeIds.map((id) => ({
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      name: post.title,
+      description: post.description,
+      thumbnailUrl: `https://i.ytimg.com/vi/${id}/hqdefault.jpg`,
+      embedUrl: `https://www.youtube-nocookie.com/embed/${id}`,
+      uploadDate: post.publishedTime,
+    })),
+  ];
+}

@@ -5,6 +5,7 @@ import { FloatingActions } from "@/components/floating-actions";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 import { PromoPopup } from "@/components/promo-popup";
+import { SiteChrome } from "@/components/site-chrome";
 import { buildMetadata, organizationSchema, personSchema } from "@/lib/seo";
 
 import "./globals.css";
@@ -39,11 +40,15 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
         />
-        <Navbar />
+        <SiteChrome>
+          <Navbar />
+        </SiteChrome>
         <main className="min-h-screen pb-24 md:pb-0">{children}</main>
-        <Footer />
-        <FloatingActions />
-        <PromoPopup />
+        <SiteChrome>
+          <Footer />
+          <FloatingActions />
+          <PromoPopup />
+        </SiteChrome>
       </body>
     </html>
   );

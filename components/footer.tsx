@@ -55,6 +55,7 @@ export function Footer() {
               <Link href="/domestic-tours">Domestic Tours</Link>
               <Link href="/international-tours">International Tours</Link>
               <Link href="/training-resources">Training & Resources</Link>
+              <Link href="/blog">Blog</Link>
             </div>
           </div>
 
