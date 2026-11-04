@@ -21,6 +21,7 @@ const bodyFont = Manrope({
   variable: "--font-body",
   weight: ["400", "500", "600", "700"],
 });
+
 export const metadata: Metadata = {
   ...buildMetadata({
     title: "Trusted Hajj, Umrah and Tours",
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
   verification: {
     google: "GCY4f7-Md6iXani0ofQhjwcrnQlCwc4iH-bKpjeWOeo",
   },
-});
+};
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
