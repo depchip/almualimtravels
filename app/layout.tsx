@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Manrope } from "next/font/google";
+import Script from "next/script";
 
 import { FloatingActions } from "@/components/floating-actions";
 import { Footer } from "@/components/footer";
@@ -54,6 +55,14 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <FloatingActions />
           <PromoPopup />
         </SiteChrome>
+        {/* AI chatbot (bottom-left). Mobile offset and admin hiding live in globals.css. */}
+        <Script
+          src="https://al-muallim-travels-chatbot.vercel.app/widget.js"
+          data-slug="al-muallim-travels"
+          data-api-url="https://al-muallim-travels-api.onrender.com"
+          data-position="left"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

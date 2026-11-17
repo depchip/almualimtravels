@@ -13,7 +13,10 @@ import { siteConfig } from "@/lib/site";
 export function AdminShell({ children }: { children: React.ReactNode }) {
   return (
     <AuthProvider>
-      <AdminGuard>{children}</AdminGuard>
+      {/* data-admin-area lets global CSS hide public-site widgets (chatbot) inside the admin. */}
+      <div data-admin-area>
+        <AdminGuard>{children}</AdminGuard>
+      </div>
     </AuthProvider>
   );
 }

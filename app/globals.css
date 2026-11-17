@@ -205,3 +205,18 @@ a {
 .post-content .hljs-name {
   color: #f9a8d4;
 }
+
+/* AI chatbot widget (widget.js). Its own styles use !important on #saas-chatbot-widget,
+   so these overrides need higher specificity. */
+@media (max-width: 767px) {
+  /* On phones, lift the closed launcher above the full-width "Inquire Now" bar,
+     level with the WhatsApp button on the right. */
+  body #saas-chatbot-widget:not(.saas-chatbot-open) {
+    bottom: 96px !important;
+  }
+}
+
+/* Not needed inside the blog admin. */
+body:has([data-admin-area]) #saas-chatbot-widget {
+  display: none !important;
+}
